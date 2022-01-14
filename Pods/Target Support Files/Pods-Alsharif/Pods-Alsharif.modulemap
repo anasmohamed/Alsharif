@@ -1,0 +1,6 @@
+framework module Pods_Alsharif {
+  umbrella header "Pods-Alsharif-umbrella.h"
+
+  export *
+  module * { export * }
+}

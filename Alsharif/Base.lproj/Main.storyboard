@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="swissra-font-normal.otf">
+            <string>Swissra-Normal</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alsharif" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81D-tk-C5c">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="892"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGE-43-Hlt">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="OxW-Qi-KZk">
+                                                <rect key="frame" x="136" y="100" width="156" height="102"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mey-IF-IwD" customClass="RoundButton" customModule="Alsharif" customModuleProvider="target">
+                                                <rect key="frame" x="186" y="751.66666666666663" width="56" height="56"/>
+                                                <color key="backgroundColor" name="ControlsColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="b0B-Rj-y8Y"/>
+                                                    <constraint firstAttribute="width" constant="56" id="qAC-4f-AIg"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" systemColor="systemGray2Color"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="28"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="MainColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Mey-IF-IwD" firstAttribute="centerX" secondItem="nGE-43-Hlt" secondAttribute="centerX" id="HXW-Mw-k72"/>
+                                            <constraint firstItem="OxW-Qi-KZk" firstAttribute="centerX" secondItem="nGE-43-Hlt" secondAttribute="centerX" id="ksU-CA-Uz0"/>
+                                            <constraint firstItem="OxW-Qi-KZk" firstAttribute="top" secondItem="nGE-43-Hlt" secondAttribute="top" constant="100" id="mtb-Zu-eDQ"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_image" translatesAutoresizingMaskIntoConstraints="NO" id="4dl-Gi-jcK">
+                                        <rect key="frame" x="40" y="353" width="348" height="186.33333333333337"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-IW-pPU">
+                                        <rect key="frame" x="119.66666666666669" y="702" width="189" height="39.666666666666629"/>
+                                        <string key="text">الأساس الصحيح مهم في العقار
+وفي البحث عنه - عيش التجربة</string>
+                                        <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nGE-43-Hlt" firstAttribute="leading" secondItem="81D-tk-C5c" secondAttribute="leading" id="7uH-Vu-a4J"/>
+                                    <constraint firstItem="nGE-43-Hlt" firstAttribute="centerX" secondItem="81D-tk-C5c" secondAttribute="centerX" id="Gpx-0z-H66"/>
+                                    <constraint firstAttribute="bottom" secondItem="nGE-43-Hlt" secondAttribute="bottom" id="HBk-kB-vdB"/>
+                                    <constraint firstItem="nGE-43-Hlt" firstAttribute="top" secondItem="81D-tk-C5c" secondAttribute="top" id="JUv-aI-rOE"/>
+                                    <constraint firstItem="Mqf-IW-pPU" firstAttribute="top" secondItem="4dl-Gi-jcK" secondAttribute="bottom" constant="162.66666666666663" id="Orz-mA-WYM"/>
+                                    <constraint firstItem="4dl-Gi-jcK" firstAttribute="centerY" secondItem="81D-tk-C5c" secondAttribute="centerY" id="WFc-wD-Bvw"/>
+                                    <constraint firstItem="4dl-Gi-jcK" firstAttribute="leading" secondItem="81D-tk-C5c" secondAttribute="leading" constant="40" id="ap7-rO-94h"/>
+                                    <constraint firstAttribute="trailing" secondItem="nGE-43-Hlt" secondAttribute="trailing" id="k1a-X8-1qF"/>
+                                    <constraint firstItem="Mey-IF-IwD" firstAttribute="top" secondItem="Mqf-IW-pPU" secondAttribute="bottom" constant="10" id="mYb-eG-Tr1"/>
+                                    <constraint firstItem="Mqf-IW-pPU" firstAttribute="centerX" secondItem="81D-tk-C5c" secondAttribute="centerX" id="nQd-bR-rGi"/>
+                                    <constraint firstAttribute="trailing" secondItem="4dl-Gi-jcK" secondAttribute="trailing" constant="40" id="sdJ-KS-e1h"/>
+                                    <constraint firstItem="4dl-Gi-jcK" firstAttribute="centerX" secondItem="81D-tk-C5c" secondAttribute="centerX" id="x2q-Bl-Avu"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="81D-tk-C5c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7hL-n7-yul"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="81D-tk-C5c" secondAttribute="trailing" id="Do8-P3-RwN"/>
+                            <constraint firstItem="81D-tk-C5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IN5-l3-rLJ"/>
+                            <constraint firstItem="nGE-43-Hlt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="doa-Ml-kHv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="81D-tk-C5c" secondAttribute="bottom" id="dw1-Jh-6x8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204.67289719626166" y="88.768898488120954"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Mey-IF-IwD">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="home_image" width="354" height="186.33332824707031"/>
+        <image name="logo" width="156" height="102"/>
+        <namedColor name="ControlsColor">
+            <color red="0.81199997663497925" green="0.27099999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.90600001811981201" green="0.88200002908706665" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
