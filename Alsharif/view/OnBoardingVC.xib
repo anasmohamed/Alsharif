@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="swissra-font-normal.otf">
+            <string>Swissra-Normal</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingVC" customModule="Alsharif" customModuleProvider="target">
+            <connections>
+                <outlet property="nextBtn" destination="Cr4-Ih-KIO" id="x5B-Cj-Scw"/>
+                <outlet property="onBoardinImage" destination="tHI-ZM-vTE" id="h7B-RH-7nA"/>
+                <outlet property="onBoardingDescriptionLbl" destination="3bu-gY-uE8" id="Bzf-dL-oDe"/>
+                <outlet property="pageControl" destination="GU2-g7-Aqq" id="GWM-9V-cFP"/>
+                <outlet property="view" destination="7eT-u1-AvO" id="Q7o-Th-541"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7eT-u1-AvO">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1W-au-bkt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqG-pi-SRC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="f6z-In-O16">
+                                    <rect key="frame" x="129" y="100" width="156" height="102"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr4-Ih-KIO" customClass="RoundButton" customModule="Alsharif" customModuleProvider="target">
+                                    <rect key="frame" x="179" y="762.5" width="56" height="56"/>
+                                    <color key="backgroundColor" name="ControlsColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="56" id="PVd-eP-Vll"/>
+                                        <constraint firstAttribute="height" constant="56" id="VGe-gG-ng7"/>
+                                    </constraints>
+                                    <state key="normal" image="arrow-right-short">
+                                        <color key="titleShadowColor" systemColor="systemGray2Color"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="28"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="nextBtnPressed" destination="-1" eventType="touchUpInside" id="aP2-oB-243"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_image" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-ZM-vTE">
+                                    <rect key="frame" x="30" y="355" width="354" height="186"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bu-gY-uE8">
+                                    <rect key="frame" x="112.5" y="581" width="189" height="40"/>
+                                    <string key="text">الأساس الصحيح مهم في العقار
+وفي البحث عنه - عيش التجربة</string>
+                                    <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <pageControl opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GU2-g7-Aqq">
+                                    <rect key="frame" x="146" y="838.5" width="122.5" height="27.5"/>
+                                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </pageControl>
+                            </subviews>
+                            <color key="backgroundColor" name="MainColor"/>
+                            <constraints>
+                                <constraint firstItem="3bu-gY-uE8" firstAttribute="top" secondItem="tHI-ZM-vTE" secondAttribute="bottom" constant="40" id="1fI-a0-tqX"/>
+                                <constraint firstItem="3bu-gY-uE8" firstAttribute="centerX" secondItem="nqG-pi-SRC" secondAttribute="centerX" id="6bY-1G-9CT"/>
+                                <constraint firstItem="f6z-In-O16" firstAttribute="top" secondItem="nqG-pi-SRC" secondAttribute="top" constant="100" id="8Wx-f9-ida"/>
+                                <constraint firstItem="GU2-g7-Aqq" firstAttribute="centerX" secondItem="nqG-pi-SRC" secondAttribute="centerX" id="FsL-bD-d8w"/>
+                                <constraint firstItem="Cr4-Ih-KIO" firstAttribute="bottom" secondItem="GU2-g7-Aqq" secondAttribute="top" constant="-20" id="Jrn-Ce-Eai"/>
+                                <constraint firstItem="Cr4-Ih-KIO" firstAttribute="centerX" secondItem="nqG-pi-SRC" secondAttribute="centerX" id="Qu0-OP-IdK"/>
+                                <constraint firstAttribute="bottom" secondItem="GU2-g7-Aqq" secondAttribute="bottom" constant="30" id="aTD-7a-sh2"/>
+                                <constraint firstItem="f6z-In-O16" firstAttribute="centerX" secondItem="nqG-pi-SRC" secondAttribute="centerX" id="aXB-b0-YsP"/>
+                                <constraint firstItem="tHI-ZM-vTE" firstAttribute="centerX" secondItem="nqG-pi-SRC" secondAttribute="centerX" id="d3f-tf-LIO"/>
+                                <constraint firstItem="tHI-ZM-vTE" firstAttribute="centerY" secondItem="nqG-pi-SRC" secondAttribute="centerY" id="tfn-Fl-qss"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nqG-pi-SRC" firstAttribute="centerX" secondItem="M1W-au-bkt" secondAttribute="centerX" id="50N-SQ-X01"/>
+                        <constraint firstAttribute="bottom" secondItem="nqG-pi-SRC" secondAttribute="bottom" id="UzL-TO-NZH"/>
+                        <constraint firstItem="nqG-pi-SRC" firstAttribute="leading" secondItem="M1W-au-bkt" secondAttribute="leading" id="nGf-yX-i0b"/>
+                        <constraint firstItem="nqG-pi-SRC" firstAttribute="top" secondItem="M1W-au-bkt" secondAttribute="top" id="qho-bc-ihi"/>
+                        <constraint firstAttribute="trailing" secondItem="nqG-pi-SRC" secondAttribute="trailing" id="wQQ-T3-A9l"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="b2y-uE-aVG"/>
+            <color key="backgroundColor" name="MainColor"/>
+            <constraints>
+                <constraint firstItem="M1W-au-bkt" firstAttribute="leading" secondItem="b2y-uE-aVG" secondAttribute="leading" id="6dc-iV-Pgr"/>
+                <constraint firstItem="nqG-pi-SRC" firstAttribute="height" secondItem="7eT-u1-AvO" secondAttribute="height" id="FdO-R8-kyW"/>
+                <constraint firstItem="M1W-au-bkt" firstAttribute="top" secondItem="7eT-u1-AvO" secondAttribute="top" id="YT7-4A-5Go"/>
+                <constraint firstItem="b2y-uE-aVG" firstAttribute="trailing" secondItem="M1W-au-bkt" secondAttribute="trailing" id="kAf-1n-YYx"/>
+                <constraint firstItem="b2y-uE-aVG" firstAttribute="bottom" secondItem="M1W-au-bkt" secondAttribute="bottom" id="pJs-xC-NbH"/>
+            </constraints>
+            <point key="canvasLocation" x="-867" y="-546"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Cr4-Ih-KIO">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow-right-short" width="12" height="10.5"/>
+        <image name="home_image" width="354" height="186.5"/>
+        <image name="logo" width="156" height="102"/>
+        <namedColor name="ControlsColor">
+            <color red="0.81199997663497925" green="0.27099999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainColor">
+            <color red="0.90600001811981201" green="0.88200002908706665" blue="0.81599998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

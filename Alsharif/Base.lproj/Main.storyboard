@@ -32,7 +32,7 @@
                                                 <rect key="frame" x="136" y="100" width="156" height="102"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mey-IF-IwD" customClass="RoundButton" customModule="Alsharif" customModuleProvider="target">
-                                                <rect key="frame" x="186" y="746" width="56" height="56"/>
+                                                <rect key="frame" x="186" y="751.66666666666663" width="56" height="56"/>
                                                 <color key="backgroundColor" name="ControlsColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="b0B-Rj-y8Y"/>
@@ -59,7 +59,7 @@
                                         <rect key="frame" x="40" y="353" width="348" height="186.33333333333337"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-IW-pPU">
-                                        <rect key="frame" x="96.666666666666686" y="702" width="235" height="34"/>
+                                        <rect key="frame" x="119.66666666666669" y="702" width="189" height="39.666666666666629"/>
                                         <string key="text">الأساس الصحيح مهم في العقار
 وفي البحث عنه - عيش التجربة</string>
                                         <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="17"/>
@@ -96,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.67289719626166" y="88.768898488120954"/>
+            <point key="canvasLocation" x="-587" y="98"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qce-K0-UmI">
@@ -155,7 +155,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عرض جميع العقارات على نظام خرائط ذكي" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62B-fU-uvA">
-                                        <rect key="frame" x="55.333333333333343" y="718.66666666666663" width="317.66666666666663" height="17"/>
+                                        <rect key="frame" x="87.666666666666671" y="715.66666666666663" width="252.66666666666663" height="20"/>
                                         <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -241,7 +241,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV0-fd-TsY">
-                                        <rect key="frame" x="92" y="701.66666666666663" width="244" height="34"/>
+                                        <rect key="frame" x="116.33333333333333" y="696" width="195.66666666666669" height="39.666666666666629"/>
                                         <string key="text">حدد نوع عقارك واعلن لدى شريحة
  كبيرة من عملائنا</string>
                                         <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="17"/>
@@ -273,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pME-fo-biO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3100" y="111"/>
+            <point key="canvasLocation" x="-2232" y="98"/>
         </scene>
     </scenes>
     <designables>

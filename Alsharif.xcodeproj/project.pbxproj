@@ -3,12 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D9F06C90045A9A15179FDBB /* Pods_Alsharif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */; };
 		32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32423B102791EFDF001CB8FD /* swissra-font-normal.otf */; };
+		32732883279A18D6005066D8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732882279A18D6005066D8 /* AppData.swift */; };
+		32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732887279A198F005066D8 /* OnBoardingVC.swift */; };
+		3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3273288B279A19A4005066D8 /* OnBoardingVC.xib */; };
+		32732891279A1D35005066D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732890279A1D35005066D8 /* Extensions.swift */; };
+		32732897279A200E005066D8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732896279A200E005066D8 /* Storyboarded.swift */; };
 		327FA54E2792263D0083C456 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FA54D2792263D0083C456 /* RoundButton.swift */; };
 		32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEC278F6D96001D95A6 /* AppDelegate.swift */; };
 		32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEE278F6D96001D95A6 /* SceneDelegate.swift */; };
@@ -21,6 +26,11 @@
 /* Begin PBXFileReference section */
 		2B84CA1EBA71330F9799A1C1 /* Pods-Alsharif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.release.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.release.xcconfig"; sourceTree = "<group>"; };
 		32423B102791EFDF001CB8FD /* swissra-font-normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swissra-font-normal.otf"; sourceTree = "<group>"; };
+		32732882279A18D6005066D8 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		32732887279A198F005066D8 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
+		3273288B279A19A4005066D8 /* OnBoardingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnBoardingVC.xib; sourceTree = "<group>"; };
+		32732890279A1D35005066D8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		32732896279A200E005066D8 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		327FA54D2792263D0083C456 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		32808BE9278F6D96001D95A6 /* Alsharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alsharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32808BEC278F6D96001D95A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,12 +64,31 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
-		327FA54C279226210083C456 /* comon */ = {
+		32732886279A198F005066D8 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				32732887279A198F005066D8 /* OnBoardingVC.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		3273288A279A19A4005066D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3273288B279A19A4005066D8 /* OnBoardingVC.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		327FA54C279226210083C456 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				32732896279A200E005066D8 /* Storyboarded.swift */,
+				32732890279A1D35005066D8 /* Extensions.swift */,
+				32732882279A18D6005066D8 /* AppData.swift */,
 				327FA54D2792263D0083C456 /* RoundButton.swift */,
 			);
-			path = comon;
+			path = helper;
 			sourceTree = "<group>";
 		};
 		32808BE0278F6D96001D95A6 = {
@@ -83,7 +112,9 @@
 		32808BEB278F6D96001D95A6 /* Alsharif */ = {
 			isa = PBXGroup;
 			children = (
-				327FA54C279226210083C456 /* comon */,
+				3273288A279A19A4005066D8 /* view */,
+				32732886279A198F005066D8 /* controller */,
+				327FA54C279226210083C456 /* helper */,
 				32423B0F2791EFCB001CB8FD /* fonts */,
 				32808BEC278F6D96001D95A6 /* AppDelegate.swift */,
 				32808BEE278F6D96001D95A6 /* SceneDelegate.swift */,
@@ -102,7 +133,6 @@
 				CCED35B2D1D516D1C0B4FA2C /* Pods-Alsharif.debug.xcconfig */,
 				2B84CA1EBA71330F9799A1C1 /* Pods-Alsharif.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,7 @@
 				32808BE5278F6D96001D95A6 /* Sources */,
 				32808BE6278F6D96001D95A6 /* Frameworks */,
 				32808BE7278F6D96001D95A6 /* Resources */,
+				51FC50D219191324C1C853AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +205,7 @@
 			files = (
 				32808BF9278F6D98001D95A6 /* LaunchScreen.storyboard in Resources */,
 				32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */,
+				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32808BF4278F6D96001D95A6 /* Main.storyboard in Resources */,
 				32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */,
 			);
@@ -182,6 +214,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		51FC50D219191324C1C853AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		58F73115BBD4250AE8AD5020 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,7 +263,11 @@
 				327FA54E2792263D0083C456 /* RoundButton.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,
 				32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */,
+				32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
+				32732883279A18D6005066D8 /* AppData.swift in Sources */,
+				32732891279A1D35005066D8 /* Extensions.swift in Sources */,
+				32732897279A200E005066D8 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
