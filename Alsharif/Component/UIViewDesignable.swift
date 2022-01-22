@@ -30,9 +30,9 @@ class UIViewDesignable: UIView {
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
         
-        layer.shadowRadius = shadowRadius
-        layer.shadowColor = shadowColor.cgColor
-        layer.shadowOffset = shadowOffset
-        layer.shadowOpacity = shadowOpacity
+//        layer.shadowRadius = shadowRadius
+//        layer.shadowColor = shadowColor.cgColor
+//        layer.shadowOffset = shadowOffset
+//        layer.shadowOpacity = shadowOpacity
     }
 }

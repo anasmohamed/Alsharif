@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class SignInVC: UIViewController,AlertsPresenting {
-    @IBOutlet weak var LoginCardView:LoginCard!
+    @IBOutlet weak var otpCardView:OTPCard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +42,8 @@ class SignInVC: UIViewController,AlertsPresenting {
           
           do{
               
-              let userPhone = try LoginCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
-              let userPassword = try LoginCardView.userPasswordTF.validatedText(validationType: .requiredField(field: "Password"))
+//              let userPhone = try otpCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
+//              let userPassword = try otpCardView.userPasswordTF.validatedText(validationType: .requiredField(field: "Password"))
 //              AuthManager.shared.login(username: userPhone, password: userPassword) { [weak self] result in
 //                  guard let self = self else { return  }
 //                  switch result{

@@ -1,24 +1,20 @@
 //
-//  LoginCard.swift
-//  client
+//  OTPCard.swift
+//  Alsharif
 //
-//  Created by moumen isawe on 05/01/2022.
+//  Created by no one on 22/01/2022.
 //
 
 import UIKit
-protocol ViewActionDelegate {
-   
-
-    // Define expected delegate functions
-    func handle()
-}
 @IBDesignable
-class LoginCard: UIViewFromNib {
+class OTPCard: UIViewFromNib {
     @IBOutlet weak var label:UILabel!
-    @IBOutlet weak var userNameTF:MainTF!
-    @IBOutlet weak var userPasswordTF:MainTF!
+    @IBOutlet weak var otpNum1:OtpTF!
+    @IBOutlet weak var otpNum2:OtpTF!
+    @IBOutlet weak var otpNum3:OtpTF!
+    @IBOutlet weak var otpNum4:OtpTF!
     
-    var delegate : ViewActionDelegate?
+ 
     @IBInspectable var labelTitle: String? = nil{
         didSet{
             self.label.text = labelTitle
@@ -45,8 +41,7 @@ class LoginCard: UIViewFromNib {
         // Drawing code
     }
     */
-    @IBAction func sendOtpBtnPressed(_ sender: Any) {
-        delegate?.handle()
-    }
-    
+
+
 }
+

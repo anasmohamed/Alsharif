@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="swissra-font-normal.otf">
+            <string>Swissra-Normal</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginCard" customModule="Alsharif" customModuleProvider="target">
             <connections>
@@ -41,15 +46,22 @@
                         <constraint firstAttribute="width" constant="140" id="qB9-FD-QW7"/>
                         <constraint firstAttribute="height" constant="35" id="vaM-TX-1Cr"/>
                     </constraints>
+                    <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="15"/>
+                    <state key="normal" title="إرسال رمز التحقق">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                    </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sendOtpBtnPressed:" destination="-1" eventType="touchUpInside" id="xUE-ac-Q25"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="0.41775616496598639" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="CmK-Cm-w2h" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ddq-8u-arU"/>
                 <constraint firstItem="HVt-1F-Mdq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ort-aq-9c4"/>
@@ -71,10 +83,10 @@
     </objects>
     <designables>
         <designable name="CmK-Cm-w2h">
-            <size key="intrinsicContentSize" width="30" height="30"/>
+            <size key="intrinsicContentSize" width="113" height="27"/>
         </designable>
         <designable name="PFr-vI-WYw">
-            <size key="intrinsicContentSize" width="38" height="34"/>
+            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
     </designables>
     <resources>

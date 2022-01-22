@@ -14,6 +14,9 @@
 		3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3273288B279A19A4005066D8 /* OnBoardingVC.xib */; };
 		32732891279A1D35005066D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732890279A1D35005066D8 /* Extensions.swift */; };
 		32732897279A200E005066D8 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732896279A200E005066D8 /* Storyboarded.swift */; };
+		3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275C2F5279C149B008A4EB0 /* OTPCard.swift */; };
+		3275C2F8279C149B008A4EB0 /* OTPCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3275C2F6279C149B008A4EB0 /* OTPCard.xib */; };
+		3275C2FB279C187C008A4EB0 /* OtpTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275C2FA279C187B008A4EB0 /* OtpTF.swift */; };
 		327FA54E2792263D0083C456 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FA54D2792263D0083C456 /* RoundButton.swift */; };
 		32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEC278F6D96001D95A6 /* AppDelegate.swift */; };
 		32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEE278F6D96001D95A6 /* SceneDelegate.swift */; };
@@ -42,6 +45,9 @@
 		3273288B279A19A4005066D8 /* OnBoardingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnBoardingVC.xib; sourceTree = "<group>"; };
 		32732890279A1D35005066D8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		32732896279A200E005066D8 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		3275C2F5279C149B008A4EB0 /* OTPCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCard.swift; sourceTree = "<group>"; };
+		3275C2F6279C149B008A4EB0 /* OTPCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPCard.xib; sourceTree = "<group>"; };
+		3275C2FA279C187B008A4EB0 /* OtpTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTF.swift; sourceTree = "<group>"; };
 		327FA54D2792263D0083C456 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		32808BE9278F6D96001D95A6 /* Alsharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alsharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32808BEC278F6D96001D95A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +193,8 @@
 			children = (
 				32991386279B583B0000635D /* LoginCard.swift */,
 				32991387279B583B0000635D /* LoginCard.xib */,
+				3275C2F5279C149B008A4EB0 /* OTPCard.swift */,
+				3275C2F6279C149B008A4EB0 /* OTPCard.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 			children = (
 				32991393279B593A0000635D /* MainTF.swift */,
 				32991394279B593A0000635D /* UIViewDesignable.swift */,
+				3275C2FA279C187B008A4EB0 /* OtpTF.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -277,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32808BF9278F6D98001D95A6 /* LaunchScreen.storyboard in Resources */,
+				3275C2F8279C149B008A4EB0 /* OTPCard.xib in Resources */,
 				32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */,
 				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
@@ -341,6 +351,7 @@
 				3299137F279B57350000635D /* AlertsPresenting.swift in Sources */,
 				3299137A279B55A30000635D /* SignUPVC.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,
+				3275C2FB279C187C008A4EB0 /* OtpTF.swift in Sources */,
 				32991396279B593A0000635D /* UIViewDesignable.swift in Sources */,
 				32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */,
 				32991395279B593A0000635D /* MainTF.swift in Sources */,
@@ -348,6 +359,7 @@
 				32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */,
 				3299138C279B58A70000635D /* UIViewFromNib.swift in Sources */,
 				3299139C279B5A4F0000635D /* Validator.swift in Sources */,
+				3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
 				32732883279A18D6005066D8 /* AppData.swift in Sources */,
 				32732891279A1D35005066D8 /* Extensions.swift in Sources */,

@@ -8,13 +8,17 @@
 import Foundation
 import UIKit
 
-class SignUPVC: UIViewController,AlertsPresenting {
+class SignUPVC: UIViewController,AlertsPresenting ,ViewActionDelegate{
+    func handle() {
+        register()
+    }
+    
 
     @IBOutlet weak var LoginCardView:LoginCard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        LoginCardView.delegate = self
          
  
     }
@@ -29,8 +33,8 @@ class SignUPVC: UIViewController,AlertsPresenting {
         register()
     }
       private func register(){
-      
-          
+        self.navigationController?.pushViewController(SignInVC.instantiate(), animated: true)
+
           do{
               
               let userPhone = try LoginCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
