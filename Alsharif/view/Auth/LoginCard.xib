@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginCard" customModule="Alsharif" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="HVt-1F-Mdq" id="ALq-AF-G3Q"/>
+                <outlet property="userNameTF" destination="PFr-vI-WYw" id="gRv-bz-cB9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIViewDesignable" customModule="Alsharif" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVt-1F-Mdq">
+                    <rect key="frame" x="20" y="84" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PFr-vI-WYw" customClass="MainTF" customModule="Alsharif" customModuleProvider="target">
+                    <rect key="frame" x="40" y="134.5" width="334" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="04c-V3-VEx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmK-Cm-w2h" customClass="RoundButton" customModule="Alsharif" customModuleProvider="target">
+                    <rect key="frame" x="137" y="264.5" width="140" height="35"/>
+                    <color key="backgroundColor" name="ControlsColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="qB9-FD-QW7"/>
+                        <constraint firstAttribute="height" constant="35" id="vaM-TX-1Cr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="CmK-Cm-w2h" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ddq-8u-arU"/>
+                <constraint firstItem="HVt-1F-Mdq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Ort-aq-9c4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CmK-Cm-w2h" secondAttribute="bottom" constant="36.5" id="TCB-Ca-XWy"/>
+                <constraint firstItem="HVt-1F-Mdq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="XgP-Ni-qQu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PFr-vI-WYw" secondAttribute="trailing" constant="40" id="bIn-RW-IPS"/>
+                <constraint firstItem="PFr-vI-WYw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="dWS-Wt-BZZ"/>
+                <constraint firstItem="PFr-vI-WYw" firstAttribute="top" secondItem="HVt-1F-Mdq" secondAttribute="bottom" constant="30" id="wYa-Bd-fzN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HVt-1F-Mdq" secondAttribute="trailing" constant="20" id="zUc-tU-W58"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="137.68115942028987" y="-71.651785714285708"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="CmK-Cm-w2h">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="PFr-vI-WYw">
+            <size key="intrinsicContentSize" width="38" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="ControlsColor">
+            <color red="0.81199997663497925" green="0.27099999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

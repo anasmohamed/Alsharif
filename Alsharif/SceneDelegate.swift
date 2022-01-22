@@ -24,8 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if AppData.token.isEmpty{
                 // no user found
                 
-//                let vc = UINavigationController(rootViewController: SignInVC.instantiate())
-//                setRootVC(vc: vc)
+                let vc = UINavigationController(rootViewController: SignUPVC.instantiate())
+                setRootVC(vc: vc)
             }else{
                 // if user is login
                 let storyboard = UIStoryboard(name:"Main" , bundle: nil)

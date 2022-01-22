@@ -16,13 +16,14 @@ class OnBoardingVC: UIViewController {
     @IBOutlet weak var nextBtn:UIButton!
     @IBOutlet weak var onBoardinImage:UIImageView!
 
-
+    @IBOutlet weak var secondImage: UIImageView!
+    
     
     private var currentIndex = 0
-    let data = [OnBoarding(image: UIImage(named: "splash-1")!, description: "ماشي يوفرلك كدادين\n رايحين نفس وجهتك", skipBtnTitle: "تخطي")
-                ,OnBoarding(image: UIImage(named: "splash-2")!, description:  "كمان ترسل طرود \n عشان توصل في الوقت المحدد", skipBtnTitle: "تخطي")
+    let data = [OnBoarding(image: UIImage(named: "splash-1")!, description: "ماشي يوفرلك كدادين\n رايحين نفس وجهتك",isTwoImage: false)
+                ,OnBoarding(image: UIImage(named: "splash-2")!, description:  "كمان ترسل طرود \n عشان توصل في الوقت المحدد", isTwoImage: true)
      
-                ,OnBoarding(image: UIImage(named: "splash-3")!, description: "وكل طلباتك تقدر تتابعها بسهولة \n  عن طريق خريطة تعرض موقع الكداد \n والزمن المتبقي للوصول", skipBtnTitle: "الرئيسية")
+                ,OnBoarding(image: UIImage(named: "splash-3")!, description: "وكل طلباتك تقدر تتابعها بسهولة \n  عن طريق خريطة تعرض موقع الكداد \n والزمن المتبقي للوصول",isTwoImage: false)
                 
                 
     
@@ -55,19 +56,25 @@ class OnBoardingVC: UIViewController {
     }
     
     
+  
     func setupData(with data:OnBoarding){
         
         self.onBoardinImage.image = data.image
         self.onBoardingDescriptionLbl.text = data.description
 //        self.skipLbl.text = data.skipBtnTitle
+        if data.isTwoImage{
+            self.secondImage.isHidden = false
+        }else{
+            self.secondImage.isHidden = true
+        }
         self.pageControl.currentPage = currentIndex
     }
     fileprivate func changeRoot() {
         AppData.isFirstOpen = false
         
-//        let vc = UINavigationController(rootViewController: SignInVC.instantiate())
+        let vc = UINavigationController(rootViewController: SignUPVC.instantiate())
         
-//        self.sceneDelegate.setRootVC(vc: vc)
+        self.sceneDelegate.setRootVC(vc: vc)
     }
     
     @IBAction func skipBtnPressed(){
@@ -77,6 +84,6 @@ class OnBoardingVC: UIViewController {
     struct OnBoarding{
         let image : UIImage
         let description: String
-        let skipBtnTitle:String
+        let isTwoImage: Bool
     }
 }
