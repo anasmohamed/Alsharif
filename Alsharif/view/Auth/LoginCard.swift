@@ -6,11 +6,8 @@
 //
 
 import UIKit
-protocol ViewActionDelegate {
-   
-
-    // Define expected delegate functions
-    func handle()
+protocol NextViewDelegate {
+    func handlePushingViewController()
 }
 @IBDesignable
 class LoginCard: UIViewFromNib {
@@ -18,7 +15,7 @@ class LoginCard: UIViewFromNib {
     @IBOutlet weak var userNameTF:MainTF!
     @IBOutlet weak var userPasswordTF:MainTF!
     
-    var delegate : ViewActionDelegate?
+    var delegate : NextViewDelegate?
     @IBInspectable var labelTitle: String? = nil{
         didSet{
             self.label.text = labelTitle
@@ -46,7 +43,7 @@ class LoginCard: UIViewFromNib {
     }
     */
     @IBAction func sendOtpBtnPressed(_ sender: Any) {
-        delegate?.handle()
+        delegate?.handlePushingViewController()
     }
     
 }

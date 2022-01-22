@@ -17,6 +17,7 @@
 		3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275C2F5279C149B008A4EB0 /* OTPCard.swift */; };
 		3275C2F8279C149B008A4EB0 /* OTPCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3275C2F6279C149B008A4EB0 /* OTPCard.xib */; };
 		3275C2FB279C187C008A4EB0 /* OtpTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275C2FA279C187B008A4EB0 /* OtpTF.swift */; };
+		3275C2FE279C4334008A4EB0 /* UserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3275C2FD279C4334008A4EB0 /* UserNameViewController.swift */; };
 		327FA54E2792263D0083C456 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327FA54D2792263D0083C456 /* RoundButton.swift */; };
 		32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEC278F6D96001D95A6 /* AppDelegate.swift */; };
 		32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32808BEE278F6D96001D95A6 /* SceneDelegate.swift */; };
@@ -48,6 +49,7 @@
 		3275C2F5279C149B008A4EB0 /* OTPCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPCard.swift; sourceTree = "<group>"; };
 		3275C2F6279C149B008A4EB0 /* OTPCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPCard.xib; sourceTree = "<group>"; };
 		3275C2FA279C187B008A4EB0 /* OtpTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpTF.swift; sourceTree = "<group>"; };
+		3275C2FD279C4334008A4EB0 /* UserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameViewController.swift; sourceTree = "<group>"; };
 		327FA54D2792263D0083C456 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		32808BE9278F6D96001D95A6 /* Alsharif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alsharif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32808BEC278F6D96001D95A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				32991379279B55A30000635D /* SignInVC.swift */,
 				32991378279B55A30000635D /* SignUPVC.swift */,
+				3275C2FD279C4334008A4EB0 /* UserNameViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */,
 				3299138C279B58A70000635D /* UIViewFromNib.swift in Sources */,
 				3299139C279B5A4F0000635D /* Validator.swift in Sources */,
+				3275C2FE279C4334008A4EB0 /* UserNameViewController.swift in Sources */,
 				3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
 				32732883279A18D6005066D8 /* AppData.swift in Sources */,

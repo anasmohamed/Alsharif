@@ -35,4 +35,7 @@ class UIViewDesignable: UIView {
 //        layer.shadowOffset = shadowOffset
 //        layer.shadowOpacity = shadowOpacity
     }
+    @IBAction func verifyOtpBtnPressed(_ sender: Any) {
+        
+    }
 }

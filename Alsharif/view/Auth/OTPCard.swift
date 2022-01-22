@@ -14,7 +14,7 @@ class OTPCard: UIViewFromNib {
     @IBOutlet weak var otpNum3:OtpTF!
     @IBOutlet weak var otpNum4:OtpTF!
     
- 
+    var delegate : NextViewDelegate?
     @IBInspectable var labelTitle: String? = nil{
         didSet{
             self.label.text = labelTitle

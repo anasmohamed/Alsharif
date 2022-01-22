@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-class SignInVC: UIViewController,AlertsPresenting {
+class SignInVC: UIViewController,AlertsPresenting ,NextViewDelegate{
     @IBOutlet weak var otpCardView:OTPCard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-         
+        otpCardView.de
  
     }
     
@@ -34,7 +34,7 @@ class SignInVC: UIViewController,AlertsPresenting {
     
    
     @IBAction func showRegisterBtnPressed(){
-        self.navigationController?.pushViewController(SignUPVC.instantiate(), animated: true)
+        self.navigationController?.pushViewController(UserNameViewController.instantiate(), animated: true)
     }
     
       private func login(){
