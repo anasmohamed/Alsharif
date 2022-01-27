@@ -38,6 +38,12 @@
 		32991396279B593A0000635D /* UIViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32991394279B593A0000635D /* UIViewDesignable.swift */; };
 		32991399279B59DA0000635D /* ColorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32991398279B59DA0000635D /* ColorSystem.swift */; };
 		3299139C279B5A4F0000635D /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3299139B279B5A4F0000635D /* Validator.swift */; };
+		329E269027A341D500D086E9 /* ListOfRealStatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E268F27A341D500D086E9 /* ListOfRealStatesViewController.swift */; };
+		329E269427A3428800D086E9 /* ListOfRealStatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269227A3428800D086E9 /* ListOfRealStatesTableViewCell.swift */; };
+		329E269527A3428800D086E9 /* ListOfRealStatesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329E269327A3428800D086E9 /* ListOfRealStatesTableViewCell.xib */; };
+		329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269727A359A400D086E9 /* TableViewHelper.swift */; };
+		329E269B27A35A7E00D086E9 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269A27A35A7E00D086E9 /* ReusableView.swift */; };
+		329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269D27A35AA400D086E9 /* NibLoadableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		32991394279B593A0000635D /* UIViewDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewDesignable.swift; sourceTree = "<group>"; };
 		32991398279B59DA0000635D /* ColorSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSystem.swift; sourceTree = "<group>"; };
 		3299139B279B5A4F0000635D /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		329E268F27A341D500D086E9 /* ListOfRealStatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRealStatesViewController.swift; sourceTree = "<group>"; };
+		329E269227A3428800D086E9 /* ListOfRealStatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfRealStatesTableViewCell.swift; sourceTree = "<group>"; };
+		329E269327A3428800D086E9 /* ListOfRealStatesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListOfRealStatesTableViewCell.xib; sourceTree = "<group>"; };
+		329E269727A359A400D086E9 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		329E269A27A35A7E00D086E9 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		329E269D27A35AA400D086E9 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alsharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED35B2D1D516D1C0B4FA2C /* Pods-Alsharif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.debug.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +134,7 @@
 		327FA54C279226210083C456 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				329E269727A359A400D086E9 /* TableViewHelper.swift */,
 				3299139B279B5A4F0000635D /* Validator.swift */,
 				32991398279B59DA0000635D /* ColorSystem.swift */,
 				3299138B279B58A70000635D /* UIViewFromNib.swift */,
@@ -183,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				328CFB9B27A2EDF40072FC5D /* Cell */,
+				329E268F27A341D500D086E9 /* ListOfRealStatesViewController.swift */,
 			);
 			path = ListOfRealState;
 			sourceTree = "<group>";
@@ -190,6 +204,8 @@
 		328CFB9B27A2EDF40072FC5D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				329E269227A3428800D086E9 /* ListOfRealStatesTableViewCell.swift */,
+				329E269327A3428800D086E9 /* ListOfRealStatesTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -216,6 +232,8 @@
 		3299137D279B56730000635D /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				329E269D27A35AA400D086E9 /* NibLoadableView.swift */,
+				329E269A27A35A7E00D086E9 /* ReusableView.swift */,
 				3299137E279B57350000635D /* AlertsPresenting.swift */,
 			);
 			path = protocol;
@@ -322,6 +340,7 @@
 				3275C2F8279C149B008A4EB0 /* OTPCard.xib in Resources */,
 				3282D49527A0A22800986CE6 /* HeaderMenuViewController.xib in Resources */,
 				32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */,
+				329E269527A3428800D086E9 /* ListOfRealStatesTableViewCell.xib in Resources */,
 				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
 				32808BF4278F6D96001D95A6 /* Main.storyboard in Resources */,
@@ -387,8 +406,10 @@
 				3299137A279B55A30000635D /* SignUPVC.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,
 				3275C2FB279C187C008A4EB0 /* OtpTF.swift in Sources */,
+				329E269427A3428800D086E9 /* ListOfRealStatesTableViewCell.swift in Sources */,
 				32991396279B593A0000635D /* UIViewDesignable.swift in Sources */,
 				32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */,
+				329E269B27A35A7E00D086E9 /* ReusableView.swift in Sources */,
 				32991395279B593A0000635D /* MainTF.swift in Sources */,
 				3299137B279B55A30000635D /* SignInVC.swift in Sources */,
 				32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */,
@@ -396,7 +417,10 @@
 				3299139C279B5A4F0000635D /* Validator.swift in Sources */,
 				3275C2FE279C4334008A4EB0 /* UserNameViewController.swift in Sources */,
 				3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */,
+				329E269027A341D500D086E9 /* ListOfRealStatesViewController.swift in Sources */,
+				329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
+				329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */,
 				32732883279A18D6005066D8 /* AppData.swift in Sources */,
 				32732891279A1D35005066D8 /* Extensions.swift in Sources */,
 				32732897279A200E005066D8 /* Storyboarded.swift in Sources */,
