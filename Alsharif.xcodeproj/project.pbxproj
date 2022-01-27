@@ -25,6 +25,8 @@
 		32808BF4278F6D96001D95A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32808BF2278F6D96001D95A6 /* Main.storyboard */; };
 		32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32808BF5278F6D98001D95A6 /* Assets.xcassets */; };
 		32808BF9278F6D98001D95A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32808BF7278F6D98001D95A6 /* LaunchScreen.storyboard */; };
+		3282D49427A0A22800986CE6 /* HeaderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */; };
+		3282D49527A0A22800986CE6 /* HeaderMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3282D49327A0A22800986CE6 /* HeaderMenuViewController.xib */; };
 		32991373279B54F10000635D /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32991371279B54F10000635D /* Auth.storyboard */; };
 		3299137A279B55A30000635D /* SignUPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32991378279B55A30000635D /* SignUPVC.swift */; };
 		3299137B279B55A30000635D /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32991379279B55A30000635D /* SignInVC.swift */; };
@@ -59,6 +61,8 @@
 		32808BF5278F6D98001D95A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32808BF8278F6D98001D95A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32808BFA278F6D98001D95A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMenuViewController.swift; sourceTree = "<group>"; };
+		3282D49327A0A22800986CE6 /* HeaderMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderMenuViewController.xib; sourceTree = "<group>"; };
 		32991371279B54F10000635D /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		32991378279B55A30000635D /* SignUPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUPVC.swift; sourceTree = "<group>"; };
 		32991379279B55A30000635D /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		32732886279A198F005066D8 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				328CFB9927A2E5230072FC5D /* Main */,
 				32991377279B55850000635D /* Auth */,
 				32732887279A198F005066D8 /* OnBoardingVC.swift */,
 			);
@@ -108,6 +113,8 @@
 			children = (
 				32991385279B57AF0000635D /* Auth */,
 				3273288B279A19A4005066D8 /* OnBoardingVC.xib */,
+				3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */,
+				3282D49327A0A22800986CE6 /* HeaderMenuViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -162,6 +169,29 @@
 				32808BFA278F6D98001D95A6 /* Info.plist */,
 			);
 			path = Alsharif;
+			sourceTree = "<group>";
+		};
+		328CFB9927A2E5230072FC5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				328CFB9A27A2E52A0072FC5D /* ListOfRealState */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		328CFB9A27A2E52A0072FC5D /* ListOfRealState */ = {
+			isa = PBXGroup;
+			children = (
+				328CFB9B27A2EDF40072FC5D /* Cell */,
+			);
+			path = ListOfRealState;
+			sourceTree = "<group>";
+		};
+		328CFB9B27A2EDF40072FC5D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3299136E279B54F10000635D /* storyboard */ = {
@@ -290,6 +320,7 @@
 			files = (
 				32808BF9278F6D98001D95A6 /* LaunchScreen.storyboard in Resources */,
 				3275C2F8279C149B008A4EB0 /* OTPCard.xib in Resources */,
+				3282D49527A0A22800986CE6 /* HeaderMenuViewController.xib in Resources */,
 				32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */,
 				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
@@ -348,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3282D49427A0A22800986CE6 /* HeaderMenuViewController.swift in Sources */,
 				32991399279B59DA0000635D /* ColorSystem.swift in Sources */,
 				327FA54E2792263D0083C456 /* RoundButton.swift in Sources */,
 				32991388279B583B0000635D /* LoginCard.swift in Sources */,

@@ -8,10 +8,12 @@
 import Foundation
 import UIKit
 
-class SignUPVC: UIViewController,AlertsPresenting ,ViewActionDelegate{
-    func handle() {
+class SignUPVC: UIViewController,AlertsPresenting ,NextViewDelegate{
+    func handlePushingViewController() {
         register()
+
     }
+   
     
 
     @IBOutlet weak var LoginCardView:LoginCard!

@@ -83,7 +83,7 @@
     </objects>
     <designables>
         <designable name="CmK-Cm-w2h">
-            <size key="intrinsicContentSize" width="113" height="27"/>
+            <size key="intrinsicContentSize" width="93" height="30"/>
         </designable>
         <designable name="PFr-vI-WYw">
             <size key="intrinsicContentSize" width="32" height="34"/>

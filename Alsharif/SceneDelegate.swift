@@ -23,9 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }else{
             if AppData.token.isEmpty{
                 // no user found
+                let storyboard = UIStoryboard(name:"Main" , bundle: nil)
                 
-                let vc = UINavigationController(rootViewController: SignUPVC.instantiate())
+                
+                let vc =  storyboard.instantiateViewController(withIdentifier:"tabBar")
                 setRootVC(vc: vc)
+//                let vc = UINavigationController(rootViewController: SignUPVC.instantiate())
+//                setRootVC(vc: vc)
             }else{
                 // if user is login
                 let storyboard = UIStoryboard(name:"Main" , bundle: nil)

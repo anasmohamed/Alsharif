@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 
-class UserNameViewController: UIViewController,AlertsPresenting ,ViewActionDelegate{
-    func handle() {
+class UserNameViewController: UIViewController,AlertsPresenting , NextViewDelegate{
+    func handlePushingViewController() {
         register()
+
     }
     
+
 
     @IBOutlet weak var LoginCardView:LoginCard!
     

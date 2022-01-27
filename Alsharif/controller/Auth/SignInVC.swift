@@ -9,12 +9,16 @@ import Foundation
 import UIKit
 
 class SignInVC: UIViewController,AlertsPresenting ,NextViewDelegate{
+    func handlePushingViewController() {
+        
+    }
+    
     @IBOutlet weak var otpCardView:OTPCard!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        otpCardView.de
+        otpCardView.delegate = self
  
     }
     
