@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2D9F06C90045A9A15179FDBB /* Pods_Alsharif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */; };
+		3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */; };
+		3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203349B27A7391D005FF8CD /* FlatesFilterView.xib */; };
+		3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349E27A73932005FF8CD /* FlatesFilterView.swift */; };
 		32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32423B102791EFDF001CB8FD /* swissra-font-normal.otf */; };
 		32732883279A18D6005066D8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732882279A18D6005066D8 /* AppData.swift */; };
 		32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732887279A198F005066D8 /* OnBoardingVC.swift */; };
@@ -48,6 +51,9 @@
 
 /* Begin PBXFileReference section */
 		2B84CA1EBA71330F9799A1C1 /* Pods-Alsharif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.release.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.release.xcconfig"; sourceTree = "<group>"; };
+		3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStateMapViewController.swift; sourceTree = "<group>"; };
+		3203349B27A7391D005FF8CD /* FlatesFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlatesFilterView.xib; sourceTree = "<group>"; };
+		3203349E27A73932005FF8CD /* FlatesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatesFilterView.swift; sourceTree = "<group>"; };
 		32423B102791EFDF001CB8FD /* swissra-font-normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swissra-font-normal.otf"; sourceTree = "<group>"; };
 		32732882279A18D6005066D8 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		32732887279A198F005066D8 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
@@ -102,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3203349527A732F0005FF8CD /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				3203349B27A7391D005FF8CD /* FlatesFilterView.xib */,
+				3203349E27A73932005FF8CD /* FlatesFilterView.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
 		32423B0F2791EFCB001CB8FD /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +138,9 @@
 		3273288A279A19A4005066D8 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				329E26A927A3670D00D086E9 /* Main */,
 				32991385279B57AF0000635D /* Auth */,
 				3273288B279A19A4005066D8 /* OnBoardingVC.xib */,
-				3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */,
-				3282D49327A0A22800986CE6 /* HeaderMenuViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -187,18 +201,19 @@
 		328CFB9927A2E5230072FC5D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				328CFB9A27A2E52A0072FC5D /* ListOfRealState */,
+				329E26A227A35CA500D086E9 /* MapScene */,
+				328CFB9A27A2E52A0072FC5D /* ListOfRealStateScene */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		328CFB9A27A2E52A0072FC5D /* ListOfRealState */ = {
+		328CFB9A27A2E52A0072FC5D /* ListOfRealStateScene */ = {
 			isa = PBXGroup;
 			children = (
 				328CFB9B27A2EDF40072FC5D /* Cell */,
 				329E268F27A341D500D086E9 /* ListOfRealStatesViewController.swift */,
 			);
-			path = ListOfRealState;
+			path = ListOfRealStateScene;
 			sourceTree = "<group>";
 		};
 		328CFB9B27A2EDF40072FC5D /* Cell */ = {
@@ -260,6 +275,32 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		329E26A227A35CA500D086E9 /* MapScene */ = {
+			isa = PBXGroup;
+			children = (
+				3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */,
+			);
+			path = MapScene;
+			sourceTree = "<group>";
+		};
+		329E26A927A3670D00D086E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3203349527A732F0005FF8CD /* Filters */,
+				329E26AA27A3672000D086E9 /* HeaderHorizentalMenu */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		329E26AA27A3672000D086E9 /* HeaderHorizentalMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3282D49327A0A22800986CE6 /* HeaderMenuViewController.xib */,
+				3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */,
+			);
+			path = HeaderHorizentalMenu;
+			sourceTree = "<group>";
+		};
 		6C4081F0D566A5EE1A049AC9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +330,7 @@
 				32808BE6278F6D96001D95A6 /* Frameworks */,
 				32808BE7278F6D96001D95A6 /* Resources */,
 				51FC50D219191324C1C853AF /* [CP] Embed Pods Frameworks */,
+				65B0D78B9298258DD541E389 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,6 +385,7 @@
 				329E269527A3428800D086E9 /* ListOfRealStatesTableViewCell.xib in Resources */,
 				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
+				3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */,
 				32808BF4278F6D96001D95A6 /* Main.storyboard in Resources */,
 				32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */,
 				32991373279B54F10000635D /* Auth.storyboard in Resources */,
@@ -391,6 +434,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		65B0D78B9298258DD541E389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,7 +461,9 @@
 				3282D49427A0A22800986CE6 /* HeaderMenuViewController.swift in Sources */,
 				32991399279B59DA0000635D /* ColorSystem.swift in Sources */,
 				327FA54E2792263D0083C456 /* RoundButton.swift in Sources */,
+				3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */,
 				32991388279B583B0000635D /* LoginCard.swift in Sources */,
+				3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */,
 				3299137F279B57350000635D /* AlertsPresenting.swift in Sources */,
 				3299137A279B55A30000635D /* SignUPVC.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,

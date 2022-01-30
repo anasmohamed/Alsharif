@@ -8,5 +8,8 @@ target 'Alsharif' do
   # Pods for Alsharif
 #  pod 'Material', '~> 3.1.0'
 pod 'ProgressHUD'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+pod 'YNDropDownMenu'
 
 end

@@ -1,16 +1,32 @@
 PODS:
+  - GoogleMaps (5.2.0):
+    - GoogleMaps/Maps (= 5.2.0)
+  - GoogleMaps/Base (5.2.0)
+  - GoogleMaps/Maps (5.2.0):
+    - GoogleMaps/Base
+  - GooglePlaces (6.0.0)
   - ProgressHUD (13.6)
+  - YNDropDownMenu (3.1.0)
 
 DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
   - ProgressHUD
+  - YNDropDownMenu
 
 SPEC REPOS:
   trunk:
+    - GoogleMaps
+    - GooglePlaces
     - ProgressHUD
+    - YNDropDownMenu
 
 SPEC CHECKSUMS:
+  GoogleMaps: 025272d5876d3b32604e5c080dc25eaf68764693
+  GooglePlaces: c97d96ae68594acb64035c9ca9f26fbfc1d23af1
   ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  YNDropDownMenu: 9c88e36c5f913bc614aaf0f3d0a7968f6251268b
 
-PODFILE CHECKSUM: 359ca842fd4e098c98d6495119dc0d853f2a2398
+PODFILE CHECKSUM: bb7908c08b2378d64cabcf5f5ae2d5cda60c38f8
 
 COCOAPODS: 1.11.2
