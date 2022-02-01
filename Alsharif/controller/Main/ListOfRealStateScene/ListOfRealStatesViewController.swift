@@ -14,6 +14,17 @@ class ListOfRealStatesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        GeneralNetworkManager.shared.getAllRealties { result in
+            self.hideHUD()
+            switch result{
+            case .success(let realState):
+                print(realState)
+//                self.data = order.data ?? []
+            case .failure(let error):
+                print(error)
+//                self.showAlert(title: "Mashi", message: error.localizedDescription, handler: nil)
+            }
+        }
         // Do any additional setup after loading the view.
     }
     func  setupTableView() {

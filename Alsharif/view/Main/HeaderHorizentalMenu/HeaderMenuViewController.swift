@@ -6,10 +6,12 @@
 //
 
 import UIKit
-
+protocol FilterBtnTappable {
+    func didPressFiltertn()
+}
 class HeaderMenuViewController: UIViewFromNib {
     
-    
+    var delegate : FilterBtnTappable?
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -21,6 +23,9 @@ class HeaderMenuViewController: UIViewFromNib {
     }
     final private func setup(){
         self.roundCorners([.layerMinXMinYCorner,.layerMaxXMinYCorner], radius: 10)
+    }
+    @IBAction func filterBtnDidTapped(_ sender: Any) {
+        delegate?.didPressFiltertn()
     }
     /*
      // MARK: - Navigation

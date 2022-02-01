@@ -7,16 +7,49 @@
 
 import UIKit
 import YNDropDownMenu
-
-class RealStateMapViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        let view = YNDropDownMenu(frame:frame, dropDownViews: dropDownViews, dropDownViewTitles: ["Apple", "Banana", "Kiwi", "Pear"])
-//        self.addSubview(view)
-        // Do any additional setup after loading the view.
+import MapKit
+import GoogleMaps
+import GooglePlaces
+class RealStateMapViewController: UIViewController,FilterBtnTappable {
+    func didPressFiltertn() {
+        if flateFilterView.isHidden{
+            flateFilterView.isHidden = false
+        }else{
+            flateFilterView.isHidden = true
+        }
     }
     
+    @IBOutlet weak var flateFilterView: UIView!
+    @IBOutlet weak var menuView:HeaderMenuViewController!
+
+    @IBOutlet weak var mapView:GMSMapView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        menuView.delegate = self
+        // Do any additional setup after loading the view.
+    }
+    @IBAction func filterExitBtnDidTapped(_ sender: Any) {
+    
+    
+    }
+    fileprivate func handleLocation() {
+        LocationManager.shared.getLocation { location, error in
+            if error != nil {
+//                self.showNoLocationVC { isActive, loc in
+//                    if let locations = loc {
+//                        let camera = GMSCameraPosition.camera(withLatitude: locations.coordinate.latitude, longitude:locations.coordinate.longitude, zoom: 12.0)
+//                        self.mapView.animate(to: camera)
+//                    
+//                    }
+//                }
+            }else{
+                let camera = GMSCameraPosition.camera(withLatitude: location!.coordinate.latitude, longitude:location!.coordinate.longitude, zoom: 12.0)
+                 
+                self.mapView.animate(to: camera)
+                
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

@@ -11,5 +11,5 @@ pod 'ProgressHUD'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'YNDropDownMenu'
-
+pod 'Moya', '~> 15.0'
 end

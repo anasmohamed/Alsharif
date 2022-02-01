@@ -12,6 +12,11 @@
 		3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203349B27A7391D005FF8CD /* FlatesFilterView.xib */; };
 		3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349E27A73932005FF8CD /* FlatesFilterView.swift */; };
 		32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32423B102791EFDF001CB8FD /* swissra-font-normal.otf */; };
+		326D700427A9DC060091CE64 /* GeneralNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */; };
+		326D700527A9DC060091CE64 /* GeneralTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700327A9DC060091CE64 /* GeneralTarget.swift */; };
+		326D701027A9DF270091CE64 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700F27A9DF270091CE64 /* Networkable.swift */; };
+		326D701427A9DF980091CE64 /* RealState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D701327A9DF980091CE64 /* RealState.swift */; };
+		326D701827A9E0B40091CE64 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D701727A9E0B40091CE64 /* AppConfig.swift */; };
 		32732883279A18D6005066D8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732882279A18D6005066D8 /* AppData.swift */; };
 		32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732887279A198F005066D8 /* OnBoardingVC.swift */; };
 		3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3273288B279A19A4005066D8 /* OnBoardingVC.xib */; };
@@ -47,6 +52,7 @@
 		329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269727A359A400D086E9 /* TableViewHelper.swift */; };
 		329E269B27A35A7E00D086E9 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269A27A35A7E00D086E9 /* ReusableView.swift */; };
 		329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269D27A35AA400D086E9 /* NibLoadableView.swift */; };
+		32E7CE6C27A898B2001F2EAC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7CE6B27A898B2001F2EAC /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,11 @@
 		3203349B27A7391D005FF8CD /* FlatesFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlatesFilterView.xib; sourceTree = "<group>"; };
 		3203349E27A73932005FF8CD /* FlatesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatesFilterView.swift; sourceTree = "<group>"; };
 		32423B102791EFDF001CB8FD /* swissra-font-normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swissra-font-normal.otf"; sourceTree = "<group>"; };
+		326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralNetworkManager.swift; sourceTree = "<group>"; };
+		326D700327A9DC060091CE64 /* GeneralTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTarget.swift; sourceTree = "<group>"; };
+		326D700F27A9DF270091CE64 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		326D701327A9DF980091CE64 /* RealState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealState.swift; sourceTree = "<group>"; };
+		326D701727A9E0B40091CE64 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		32732882279A18D6005066D8 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		32732887279A198F005066D8 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
 		3273288B279A19A4005066D8 /* OnBoardingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnBoardingVC.xib; sourceTree = "<group>"; };
@@ -92,6 +103,7 @@
 		329E269727A359A400D086E9 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
 		329E269A27A35A7E00D086E9 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		329E269D27A35AA400D086E9 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		32E7CE6B27A898B2001F2EAC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alsharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED35B2D1D516D1C0B4FA2C /* Pods-Alsharif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.debug.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +137,31 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		326D700027A9DBD60091CE64 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				326D700127A9DBE60091CE64 /* General */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		326D700127A9DBE60091CE64 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */,
+				326D700327A9DC060091CE64 /* GeneralTarget.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		326D701227A9DF5C0091CE64 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				326D701327A9DF980091CE64 /* RealState.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		32732886279A198F005066D8 /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +185,8 @@
 		327FA54C279226210083C456 /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				326D701727A9E0B40091CE64 /* AppConfig.swift */,
+				32E7CE6B27A898B2001F2EAC /* LocationManager.swift */,
 				329E269727A359A400D086E9 /* TableViewHelper.swift */,
 				3299139B279B5A4F0000635D /* Validator.swift */,
 				32991398279B59DA0000635D /* ColorSystem.swift */,
@@ -181,7 +220,9 @@
 		32808BEB278F6D96001D95A6 /* Alsharif */ = {
 			isa = PBXGroup;
 			children = (
+				326D701227A9DF5C0091CE64 /* model */,
 				32991392279B590C0000635D /* Component */,
+				326D700027A9DBD60091CE64 /* Network */,
 				3299137D279B56730000635D /* protocol */,
 				3299136E279B54F10000635D /* storyboard */,
 				3273288A279A19A4005066D8 /* view */,
@@ -247,6 +288,7 @@
 		3299137D279B56730000635D /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				326D700F27A9DF270091CE64 /* Networkable.swift */,
 				329E269D27A35AA400D086E9 /* NibLoadableView.swift */,
 				329E269A27A35A7E00D086E9 /* ReusableView.swift */,
 				3299137E279B57350000635D /* AlertsPresenting.swift */,
@@ -463,8 +505,12 @@
 				327FA54E2792263D0083C456 /* RoundButton.swift in Sources */,
 				3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */,
 				32991388279B583B0000635D /* LoginCard.swift in Sources */,
+				326D700427A9DC060091CE64 /* GeneralNetworkManager.swift in Sources */,
 				3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */,
+				326D700527A9DC060091CE64 /* GeneralTarget.swift in Sources */,
+				32E7CE6C27A898B2001F2EAC /* LocationManager.swift in Sources */,
 				3299137F279B57350000635D /* AlertsPresenting.swift in Sources */,
+				326D701027A9DF270091CE64 /* Networkable.swift in Sources */,
 				3299137A279B55A30000635D /* SignUPVC.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,
 				3275C2FB279C187C008A4EB0 /* OtpTF.swift in Sources */,
@@ -478,8 +524,10 @@
 				3299138C279B58A70000635D /* UIViewFromNib.swift in Sources */,
 				3299139C279B5A4F0000635D /* Validator.swift in Sources */,
 				3275C2FE279C4334008A4EB0 /* UserNameViewController.swift in Sources */,
+				326D701427A9DF980091CE64 /* RealState.swift in Sources */,
 				3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */,
 				329E269027A341D500D086E9 /* ListOfRealStatesViewController.swift in Sources */,
+				326D701827A9E0B40091CE64 /* AppConfig.swift in Sources */,
 				329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
 				329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */,
