@@ -21,11 +21,63 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable {
     
     @IBOutlet weak var flateFilterView: UIView!
     @IBOutlet weak var menuView:HeaderMenuViewController!
-
+    @IBOutlet weak var rentBtn: UIButton!
+    @IBOutlet weak var sellBtn: UIButton!
+    @IBOutlet weak var familes: UIButton!
+    @IBOutlet weak var singleBtn: UIButton!
+    @IBOutlet weak var twoRoomsBtn: UIButton!
+    @IBOutlet weak var threeRooms: UIButton!
+    @IBOutlet weak var fourRoomsOrMoreBtn: UIButton!
+    @IBOutlet weak var applyFilterBtn: UIButton!
+    
+    @IBAction func applyFilterBtn(_ sender: Any) {
+    }
+    
+    @IBAction func exitFilterBtn(_ sender: Any) {
+        flateFilterView.isHidden = true
+    }
+    
+    
+    @IBAction func rentBtnFillteDidTapped(_ sender: Any) {
+        rentBtn.blackBorder()
+        sellBtn.withoutBorder()
+    }
+    @IBAction func sellBtnFillterDidTapped(_ sender: Any) {
+        sellBtn.blackBorder()
+        rentBtn.withoutBorder()
+    }
+    @IBAction func familesBtnFilterDidTapped(_ sender: Any) {
+    familes.blackBorder()
+        singleBtn.withoutBorder()
+    }
+    @IBAction func singleBtnFiltterDidTapped(_ sender: Any) {
+        singleBtn.blackBorder()
+            familes.withoutBorder()
+    }
+    @IBAction func twoRoomsBtnFiltterDidTapped(_ sender: Any) {
+        twoRoomsBtn.blackBorder()
+            threeRooms.withoutBorder()
+        fourRoomsOrMoreBtn.withoutBorder()
+    }
+    @IBAction func threeRoomsBtnFillterDidTapped(_ sender: Any) {
+        threeRooms.blackBorder()
+            twoRoomsBtn.withoutBorder()
+        fourRoomsOrMoreBtn.withoutBorder()
+    }
+    @IBAction func fourRoomsOrMoreBtnFillterDidTapped(_ sender: Any) {
+            fourRoomsOrMoreBtn.blackBorder()
+            twoRoomsBtn.withoutBorder()
+            threeRooms.withoutBorder()
+    }
     @IBOutlet weak var mapView:GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         menuView.delegate = self
+        sellBtn.blackBorder()
+        familes.blackBorder()
+        twoRoomsBtn.blackBorder()
+        applyFilterBtn.layer.cornerRadius = 10
+
         // Do any additional setup after loading the view.
     }
     @IBAction func filterExitBtnDidTapped(_ sender: Any) {

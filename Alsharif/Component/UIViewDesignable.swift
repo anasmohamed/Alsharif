@@ -26,7 +26,8 @@ class UIViewDesignable: UIView {
         
         
         layer.cornerRadius = cornerRadius
-        
+        self.roundCorners([.layerMinXMinYCorner,.layerMaxXMinYCorner], radius: cornerRadius)
+
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.cgColor
         

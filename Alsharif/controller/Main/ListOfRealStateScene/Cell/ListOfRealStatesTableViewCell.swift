@@ -9,6 +9,10 @@ import UIKit
 
 class ListOfRealStatesTableViewCell: UITableViewCell,NibLoadableView,ReusableView {
 
+    @IBOutlet weak var realStatePlace: UILabel!
+    @IBOutlet weak var realStatePrice: UILabel!
+    @IBOutlet weak var realStateNae: UILabel!
+    @IBOutlet weak var realStateImage: UIImageView!
     @IBOutlet weak var mainView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()

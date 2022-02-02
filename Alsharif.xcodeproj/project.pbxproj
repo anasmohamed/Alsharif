@@ -52,6 +52,7 @@
 		329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269727A359A400D086E9 /* TableViewHelper.swift */; };
 		329E269B27A35A7E00D086E9 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269A27A35A7E00D086E9 /* ReusableView.swift */; };
 		329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269D27A35AA400D086E9 /* NibLoadableView.swift */; };
+		32B39F4327AB34490051A684 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39F4227AB34490051A684 /* ButtonBorder.swift */; };
 		32E7CE6C27A898B2001F2EAC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7CE6B27A898B2001F2EAC /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		329E269727A359A400D086E9 /* TableViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
 		329E269A27A35A7E00D086E9 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		329E269D27A35AA400D086E9 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		32B39F4227AB34490051A684 /* ButtonBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 		32E7CE6B27A898B2001F2EAC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alsharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED35B2D1D516D1C0B4FA2C /* Pods-Alsharif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.debug.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.debug.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				32732890279A1D35005066D8 /* Extensions.swift */,
 				32732882279A18D6005066D8 /* AppData.swift */,
 				327FA54D2792263D0083C456 /* RoundButton.swift */,
+				32B39F4227AB34490051A684 /* ButtonBorder.swift */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */,
 				32732883279A18D6005066D8 /* AppData.swift in Sources */,
 				32732891279A1D35005066D8 /* Extensions.swift in Sources */,
+				32B39F4327AB34490051A684 /* ButtonBorder.swift in Sources */,
 				32732897279A200E005066D8 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
