@@ -37,6 +37,8 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
     @IBOutlet weak var realStaePlaceLbl: UILabel!
     @IBOutlet weak var realSatePriceLbl: UILabel!
     
+    @IBOutlet weak var villaFiltter: UIView!
+    @IBOutlet weak var landsFiltter: UIView!
     @IBOutlet weak var realSateView: UIViewDesignable!
     var realStatesList = [RealState]()
     var clickedLocationRealStat : RealState?
