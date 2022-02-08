@@ -33,6 +33,9 @@
                             <state key="normal" title="أراضي">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="landsBtnDidTapped:" destination="-1" eventType="touchUpInside" id="4uL-cR-GH5"/>
+                            </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZGp-sp-QVG">
                             <rect key="frame" x="117.5" y="0.0" width="107" height="36"/>
@@ -46,6 +49,9 @@
                                     <state key="normal" title="فلل">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="villaBtnDidTapped:" destination="-1" eventType="touchUpInside" id="B3O-Oz-QH6"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -61,6 +67,9 @@
                                     <state key="normal" title="شقق">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
+                                    <connections>
+                                        <action selector="flatesBtnDidTapped:" destination="-1" eventType="touchUpInside" id="5rW-bc-Gkj"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>

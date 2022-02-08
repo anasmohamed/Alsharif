@@ -11,16 +11,9 @@ import MapKit
 import GoogleMaps
 import GooglePlaces
 import FirebaseFirestore
-class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapViewDelegate {
-    func didPressFiltertn() {
-        if flateFilterView.isHidden{
-            flateFilterView.isHidden = false
-        }else{
-            flateFilterView.isHidden = true
-        }
-    }
-    let locationManager = CLLocationManager()
-    var cameraPosition = GMSCameraPosition()
+class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapViewDelegate ,VillaBtnTappable,FlatesBtnTappable,LandsBtnTappable{
+    
+    
     @IBOutlet weak var flateFilterView: UIView!
     @IBOutlet weak var menuView:HeaderMenuViewController!
     @IBOutlet weak var rentBtn: UIButton!
@@ -31,17 +24,24 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
     @IBOutlet weak var threeRooms: UIButton!
     @IBOutlet weak var fourRoomsOrMoreBtn: UIButton!
     @IBOutlet weak var applyFilterBtn: UIButton!
-    let db = Firestore.firestore()
     @IBOutlet weak var realStateImage: UIImageView!
     @IBOutlet weak var realStateTitleLbl: UILabel!
     @IBOutlet weak var realStaePlaceLbl: UILabel!
     @IBOutlet weak var realSatePriceLbl: UILabel!
-    
     @IBOutlet weak var villaFiltter: UIView!
     @IBOutlet weak var landsFiltter: UIView!
     @IBOutlet weak var realSateView: UIViewDesignable!
+    
+    
+    
     var realStatesList = [RealState]()
     var clickedLocationRealStat : RealState?
+    let db = Firestore.firestore()
+    let locationManager = CLLocationManager()
+    var cameraPosition = GMSCameraPosition()
+    var fillterClickedBtnName = ""
+    
+    
     @IBAction func applyFilterBtn(_ sender: Any) {
     }
     
@@ -84,7 +84,10 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
     @IBOutlet weak var mapView:GMSMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        menuView.delegate = self
+        menuView.fillterDelegate = self
+        menuView.flateDelegate = self
+        menuView.villaDelegate = self
+        menuView.landsDelegate = self
         sellBtn.blackBorder()
         familes.blackBorder()
         twoRoomsBtn.blackBorder()
@@ -145,22 +148,61 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
         
         
     }
-    //    fileprivate func loadData() {
-    //        self.locationManager.delegate = self
-    //        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-    //        self.locationManager.requestWhenInUseAuthorization()
-    //        self.locationManager.startUpdatingLocation()
-    //        showCurrentLocationOnMap()
-    //    }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func didPressVillaBtn() {
+        fillterClickedBtnName = "Villa"
+    }
+    
+    func didPressFlatesBtn() {
+        fillterClickedBtnName = "Flates"
+        
+    }
+    
+    func didPressLandsBtn() {
+        fillterClickedBtnName = "Lands"
+        
+    }
+    
+    
+    
+    func didPressFiltertn() {
+        
+        switch fillterClickedBtnName {
+        case "Flates":
+            if flateFilterView.isHidden{
+                flateFilterView.isHidden = false
+                realSateView.isHidden = true
+            }else{
+                realSateView.isHidden = false
+
+                flateFilterView.isHidden = true
+            }
+        case "Villa":
+            if villaFiltter.isHidden{
+                realSateView.isHidden = true
+
+                villaFiltter.isHidden = false
+            }else{
+                realSateView.isHidden = false
+
+                villaFiltter.isHidden = true
+            }
+        case "Lands":
+            if landsFiltter.isHidden{
+                realSateView.isHidden = true
+
+                landsFiltter.isHidden = false
+            }else{
+                realSateView.isHidden = false
+
+                landsFiltter.isHidden = true
+            }
+        default:
+            break
+        }
+        
+    }
+    
+    
     
 }

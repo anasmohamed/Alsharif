@@ -9,9 +9,24 @@ import UIKit
 protocol FilterBtnTappable {
     func didPressFiltertn()
 }
+protocol FlatesBtnTappable {
+    func didPressFlatesBtn()
+}
+protocol VillaBtnTappable {
+    func didPressVillaBtn()
+}
+protocol LandsBtnTappable {
+    func didPressLandsBtn()
+}
 class HeaderMenuViewController: UIViewFromNib {
     
-    var delegate : FilterBtnTappable?
+    var fillterDelegate : FilterBtnTappable?
+    var flateDelegate : FlatesBtnTappable?
+
+    var villaDelegate : VillaBtnTappable?
+
+    var landsDelegate : LandsBtnTappable?
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -25,16 +40,18 @@ class HeaderMenuViewController: UIViewFromNib {
         self.roundCorners([.layerMinXMinYCorner,.layerMaxXMinYCorner], radius: 10)
     }
     @IBAction func filterBtnDidTapped(_ sender: Any) {
-        delegate?.didPressFiltertn()
+        fillterDelegate?.didPressFiltertn()
     }
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+    
+     @IBAction func landsBtnDidTapped(_ sender: Any) {
+        landsDelegate?.didPressLandsBtn()
      }
-     */
+     @IBAction func villaBtnDidTapped(_ sender: Any) {
+        villaDelegate?.didPressVillaBtn()
+     }
+   
+    @IBAction func flatesBtnDidTapped(_ sender: Any) {
+        flateDelegate?.didPressFlatesBtn()
+    }
     
 }
