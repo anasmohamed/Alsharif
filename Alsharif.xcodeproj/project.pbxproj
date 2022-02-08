@@ -11,6 +11,7 @@
 		3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */; };
 		3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203349B27A7391D005FF8CD /* FlatesFilterView.xib */; };
 		3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349E27A73932005FF8CD /* FlatesFilterView.swift */; };
+		3223020E27B1CD3500DE493E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3223020D27B1CD3500DE493E /* GoogleService-Info.plist */; };
 		32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32423B102791EFDF001CB8FD /* swissra-font-normal.otf */; };
 		326D700427A9DC060091CE64 /* GeneralNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */; };
 		326D700527A9DC060091CE64 /* GeneralTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700327A9DC060091CE64 /* GeneralTarget.swift */; };
@@ -61,6 +62,7 @@
 		3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStateMapViewController.swift; sourceTree = "<group>"; };
 		3203349B27A7391D005FF8CD /* FlatesFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlatesFilterView.xib; sourceTree = "<group>"; };
 		3203349E27A73932005FF8CD /* FlatesFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatesFilterView.swift; sourceTree = "<group>"; };
+		3223020D27B1CD3500DE493E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		32423B102791EFDF001CB8FD /* swissra-font-normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "swissra-font-normal.otf"; sourceTree = "<group>"; };
 		326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralNetworkManager.swift; sourceTree = "<group>"; };
 		326D700327A9DC060091CE64 /* GeneralTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTarget.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		32808BEB278F6D96001D95A6 /* Alsharif */ = {
 			isa = PBXGroup;
 			children = (
+				3223020D27B1CD3500DE493E /* GoogleService-Info.plist */,
 				326D701227A9DF5C0091CE64 /* model */,
 				32991392279B590C0000635D /* Component */,
 				326D700027A9DBD60091CE64 /* Network */,
@@ -374,8 +377,8 @@
 				32808BE5278F6D96001D95A6 /* Sources */,
 				32808BE6278F6D96001D95A6 /* Frameworks */,
 				32808BE7278F6D96001D95A6 /* Resources */,
-				51FC50D219191324C1C853AF /* [CP] Embed Pods Frameworks */,
-				65B0D78B9298258DD541E389 /* [CP] Copy Pods Resources */,
+				49D7A2CD104B8D3D1098B39E /* [CP] Embed Pods Frameworks */,
+				0ED9E16B354F7F4D3E893BEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,6 +431,7 @@
 				3282D49527A0A22800986CE6 /* HeaderMenuViewController.xib in Resources */,
 				32808BF6278F6D98001D95A6 /* Assets.xcassets in Resources */,
 				329E269527A3428800D086E9 /* ListOfRealStatesTableViewCell.xib in Resources */,
+				3223020E27B1CD3500DE493E /* GoogleService-Info.plist in Resources */,
 				3273288C279A19A4005066D8 /* OnBoardingVC.xib in Resources */,
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
 				3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */,
@@ -440,7 +444,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		51FC50D219191324C1C853AF /* [CP] Embed Pods Frameworks */ = {
+		0ED9E16B354F7F4D3E893BEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49D7A2CD104B8D3D1098B39E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,23 +498,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		65B0D78B9298258DD541E389 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alsharif/Pods-Alsharif-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -692,7 +696,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anas.alsharif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherifApp.sherif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -712,7 +716,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = anas.alsharif;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sherifApp.sherif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

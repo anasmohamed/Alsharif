@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SDWebImage
 class ListOfRealStatesTableViewCell: UITableViewCell,NibLoadableView,ReusableView {
 
     @IBOutlet weak var realStatePlace: UILabel!
@@ -14,6 +14,16 @@ class ListOfRealStatesTableViewCell: UITableViewCell,NibLoadableView,ReusableVie
     @IBOutlet weak var realStateNae: UILabel!
     @IBOutlet weak var realStateImage: UIImageView!
     @IBOutlet weak var mainView: UIView!
+    
+    var realStat : RealState?{
+        didSet{
+//            realStatePlace.text = realStat.
+            realStateNae.text = realStat?.title
+            realStatePrice.text = (realStat?.price ?? "0") + " SAR"
+            realStateImage.sd_setImage(with: URL(string: realStat?.image1 ?? ""), completed: nil)
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

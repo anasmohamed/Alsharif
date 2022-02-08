@@ -10,6 +10,7 @@ import YNDropDownMenu
 import MapKit
 import GoogleMaps
 import GooglePlaces
+import FirebaseFirestore
 class RealStateMapViewController: UIViewController,FilterBtnTappable {
     func didPressFiltertn() {
         if flateFilterView.isHidden{
@@ -29,7 +30,8 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable {
     @IBOutlet weak var threeRooms: UIButton!
     @IBOutlet weak var fourRoomsOrMoreBtn: UIButton!
     @IBOutlet weak var applyFilterBtn: UIButton!
-    
+    let db = Firestore.firestore()
+
     @IBAction func applyFilterBtn(_ sender: Any) {
     }
     
@@ -77,7 +79,15 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable {
         familes.blackBorder()
         twoRoomsBtn.blackBorder()
         applyFilterBtn.layer.cornerRadius = 10
-
+        db.collection("Estate").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
         // Do any additional setup after loading the view.
     }
     @IBAction func filterExitBtnDidTapped(_ sender: Any) {

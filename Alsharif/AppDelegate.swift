@@ -8,6 +8,8 @@
 import UIKit
 import GoogleMaps
 import GooglePlaces
+import Firebase
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UITabBar.appearance().unselectedItemTintColor = .white
+        FirebaseApp.configure()
 
         GMSServices.provideAPIKey(AppConfig.googleMapKey)
         GMSPlacesClient.provideAPIKey(AppConfig.googlePlacesKey)

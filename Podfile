@@ -7,9 +7,20 @@ target 'Alsharif' do
 
   # Pods for Alsharif
 #  pod 'Material', '~> 3.1.0'
+pod 'YNDropDownMenu'
+pod 'Firebase'
+pod 'Firebase/Analytics'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Storage'
+pod 'IQKeyboardManagerSwift'
+pod 'AEOTPTextField'
+pod 'Moya'
+pod 'SDWebImage'
 pod 'ProgressHUD'
 pod 'GoogleMaps'
-pod 'GooglePlaces'
-pod 'YNDropDownMenu'
-pod 'Moya', '~> 15.0'
+pod 'GooglePlaces' 
+
+
 end
