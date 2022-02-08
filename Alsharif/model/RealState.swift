@@ -18,8 +18,8 @@ struct RealState :Codable{
     var tank: String?
     var toilet : String?
     let title:String?
-    var latitude: String?
-    var longitude: String?
+    var latitude: Double?
+    var longitude: Double?
     let furnished:String?
     let floor:String?
     let room:String?

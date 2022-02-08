@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         UITabBar.appearance().unselectedItemTintColor = .white
         FirebaseApp.configure()
+        GMSServices.provideAPIKey(AppConfig.googleMapKey)
+
 
         GMSServices.provideAPIKey(AppConfig.googleMapKey)
         GMSPlacesClient.provideAPIKey(AppConfig.googlePlacesKey)

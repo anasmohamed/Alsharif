@@ -333,7 +333,13 @@
                         <outlet property="familes" destination="5z5-xH-bmA" id="4Ne-e2-0hY"/>
                         <outlet property="flateFilterView" destination="luC-T3-R3d" id="WKT-uX-ydT"/>
                         <outlet property="fourRoomsOrMoreBtn" destination="4up-kR-nkJ" id="WpC-pN-ZnF"/>
+                        <outlet property="mapView" destination="qbV-ZY-crn" id="Ysf-Hy-HtM"/>
                         <outlet property="menuView" destination="2cb-eU-ZgM" id="WMk-OY-OYB"/>
+                        <outlet property="realSatePriceLbl" destination="LtY-4y-2jE" id="sAw-SN-Apm"/>
+                        <outlet property="realSateView" destination="l5s-Ka-Z2l" id="Gfx-eU-OWR"/>
+                        <outlet property="realStaePlaceLbl" destination="Pmb-5w-bdt" id="3qT-nG-Quf"/>
+                        <outlet property="realStateImage" destination="PHb-rM-OaB" id="LE7-kL-RoW"/>
+                        <outlet property="realStateTitleLbl" destination="Knc-7P-gPP" id="NLd-HF-QeA"/>
                         <outlet property="rentBtn" destination="frn-Vh-u1X" id="ZFw-Eb-w4o"/>
                         <outlet property="sellBtn" destination="MKA-4P-HrI" id="TfL-9j-RJa"/>
                         <outlet property="singleBtn" destination="QiP-WU-2w8" id="scS-RT-VH0"/>
