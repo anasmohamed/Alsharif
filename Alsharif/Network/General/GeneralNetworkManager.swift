@@ -11,7 +11,7 @@ import Moya
 
 protocol GeneralNetworkabke:Networkable{
      
-    func getAllRealties(completion: @escaping (Result<RealState, Error>) -> ())
+    func getAllRealties(completion: @escaping (Result<ApartmentModel, Error>) -> ())
 }
 final class GeneralNetworkManager:GeneralNetworkabke{
 
@@ -36,7 +36,7 @@ final class GeneralNetworkManager:GeneralNetworkabke{
         return instance
     }()
     
-    func getAllRealties(completion: @escaping (Result<RealState, Error>)->()) {
+    func getAllRealties(completion: @escaping (Result<ApartmentModel, Error>)->()) {
         request(target: .getAllRealties, completion: completion)
     }
     

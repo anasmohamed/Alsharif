@@ -38,14 +38,16 @@ class SignInVC: UIViewController,AlertsPresenting ,NextViewDelegate{
     
    
     @IBAction func showRegisterBtnPressed(){
-        self.navigationController?.pushViewController(UserNameViewController.instantiate(), animated: true)
+        login()
+//        self.navigationController?.pushViewController(UserNameViewController.instantiate(), animated: true)
     }
     
       private func login(){
-      
-          
-          do{
-              
+        let vc = TabBarVC.instantiate()
+        self.sceneDelegate.setRootVC(vc: vc)
+//
+//          do{
+//
 //              let userPhone = try otpCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
 //              let userPassword = try otpCardView.userPasswordTF.validatedText(validationType: .requiredField(field: "Password"))
 //              AuthManager.shared.login(username: userPhone, password: userPassword) { [weak self] result in
@@ -66,9 +68,9 @@ class SignInVC: UIViewController,AlertsPresenting ,NextViewDelegate{
 //                  }
 //              }
                 
-          }catch(let error){
-              self.showAlert(title: "Warning", message: (error as! ValidationError).message)
-          }
+//          }catch(let error){
+//              self.showAlert(title: "Warning", message: (error as! ValidationError).message)
+//          }
         
           
           

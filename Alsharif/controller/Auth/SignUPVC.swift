@@ -35,13 +35,13 @@ class SignUPVC: UIViewController,AlertsPresenting ,NextViewDelegate{
         register()
     }
       private func register(){
-        self.navigationController?.pushViewController(SignInVC.instantiate(), animated: true)
+        self.navigationController?.pushViewController(TabBarVC.instantiate(), animated: true)
 
-          do{
-              
-              let userPhone = try LoginCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
-              let userPassword = try LoginCardView.userPasswordTF.validatedText(validationType: .requiredField(field: "Password"))
-              
+//          do{
+//
+//              let userPhone = try LoginCardView.userNameTF.validatedText(validationType: .requiredField(field: "User Name"))
+//              let userPassword = try LoginCardView.userPasswordTF.validatedText(validationType: .requiredField(field: "Password"))
+//
 //              AuthManager.shared.register(username: userPhone, password: userPassword) {[weak self] result in
 //                  guard let self = self else { return  }
 //                  switch result{
@@ -62,9 +62,9 @@ class SignUPVC: UIViewController,AlertsPresenting ,NextViewDelegate{
 //              }
               
                 
-          }catch(let error){
-              self.showAlert(title: "Warning", message: (error as! ValidationError).message)
-          }
+//          }catch(let error){
+//              self.showAlert(title: "Warning", message: (error as! ValidationError).message)
+//          }
         
           
           

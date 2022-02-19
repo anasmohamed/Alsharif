@@ -15,7 +15,7 @@ class ListOfRealStatesTableViewCell: UITableViewCell,NibLoadableView,ReusableVie
     @IBOutlet weak var realStateImage: UIImageView!
     @IBOutlet weak var mainView: UIView!
     
-    var realStat : RealState?{
+    var realStat : ApartmentModel?{
         didSet{
 //            realStatePlace.text = realStat.
             realStateNae.text = realStat?.title
@@ -26,6 +26,7 @@ class ListOfRealStatesTableViewCell: UITableViewCell,NibLoadableView,ReusableVie
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        overrideUserInterfaceStyle = .light
         // Initialization code
     }
 

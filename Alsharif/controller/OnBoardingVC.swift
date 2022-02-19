@@ -20,17 +20,17 @@ class OnBoardingVC: UIViewController {
     
     
     private var currentIndex = 0
-    let data = [OnBoarding(image: UIImage(named: "splash-1")!, description: "ماشي يوفرلك كدادين\n رايحين نفس وجهتك",isTwoImage: false)
-                ,OnBoarding(image: UIImage(named: "splash-2")!, description:  "كمان ترسل طرود \n عشان توصل في الوقت المحدد", isTwoImage: true)
+    let data = [OnBoarding(image: UIImage(named: "splash-1")!, description: "تطبيق الشريف للعقارات",isTwoImage: false)
+                ,OnBoarding(image: UIImage(named: "splash-2")!, description:  "المكان الأنسب لك للبحث عن اي عقار تحتاجه", isTwoImage: true)
      
-                ,OnBoarding(image: UIImage(named: "splash-3")!, description: "وكل طلباتك تقدر تتابعها بسهولة \n  عن طريق خريطة تعرض موقع الكداد \n والزمن المتبقي للوصول",isTwoImage: false)
+                ,OnBoarding(image: UIImage(named: "splash-3")!, description: "ابدأ رحلة البحث عن العقارات الآن وسجل في التطبيق",isTwoImage: false)
                 
-                
-    
+
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
 
         // Do any additional setup after loading the view.
         self.setupData(with: data[currentIndex])
@@ -72,8 +72,8 @@ class OnBoardingVC: UIViewController {
     fileprivate func changeRoot() {
         AppData.isFirstOpen = false
         
-        let vc = UINavigationController(rootViewController: SignUPVC.instantiate())
-        
+       let vc = UINavigationController(rootViewController: SignInVC.instantiate())
+    //    let vc =  TabBarVC.instantiate()
         self.sceneDelegate.setRootVC(vc: vc)
     }
     

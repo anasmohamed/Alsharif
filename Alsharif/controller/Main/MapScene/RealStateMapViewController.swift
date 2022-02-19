@@ -34,8 +34,8 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
     
     
     
-    var realStatesList = [RealState]()
-    var clickedLocationRealStat : RealState?
+    var realStatesList = [ApartmentModel]()
+    var clickedLocationRealStat : ApartmentModel?
     let db = Firestore.firestore()
     let locationManager = CLLocationManager()
     var cameraPosition = GMSCameraPosition()
@@ -92,30 +92,33 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
         familes.blackBorder()
         twoRoomsBtn.blackBorder()
         applyFilterBtn.layer.cornerRadius = 10
+        overrideUserInterfaceStyle = .light
+
         self.mapView.delegate = self
+     //   showRealStatesPlaces()
         realSateView.isHidden = true
-        //        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 13.0)
-        //        mapView.camera = camera
-        //        mapView.isMyLocationEnabled = true
-        //
-        //        // Creates a marker in the center of the map.
-        //        let marker = GMSMarker()
-        //        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        //        marker.title = "Sydney"
-        //        marker.snippet = "Australia"
-        //        marker.map = mapView
-        db.collection("Estate").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    let realState = RealState(EstateType: document["EstateType"] as? String, apartment: document["apartment"] as? String, apartmentArea: document["apartmentArea"] as? String, carPark: document["carPark"] as? String, contact: document["contact"] as? String, details: document["details"]as? String, contract: document["contract"] as? String, elevator: document["elevator"]as? String, tank: document["contract"] as? String, toilet: document["toilet"]as? String, title: document["title"] as? String, latitude: document["latitude"] as? Double, longitude: document["longitude"]as? Double, furnished: document["furnished"] as? String, floor: document["floor"] as? String, room: document["room"] as? String, hall: document["hall"]as? String, electricity: document["electricity"]as? String, frontispiece: document["frontispiece"] as? String, streetWeight: document["frontispiece"]as? String, price: document["price"]as? String, image1: document["image1"]as? String, image2: document["image2"] as? String)
-                    self.realStatesList.append(realState)
-                    print("\(document.documentID) => \(document.data())")
-                }
-                self.showRealStatesPlaces()
-            }
-        }
+                let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 13.0)
+                mapView.camera = camera
+                mapView.isMyLocationEnabled = true
+        
+                // Creates a marker in the center of the map.
+                let marker = GMSMarker()
+                marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+                marker.title = "Sydney"
+                marker.snippet = "Australia"
+                marker.map = mapView
+//        db.collection("Estate").getDocuments() { (querySnapshot, err) in
+//            if let err = err {
+//                print("Error getting documents: \(err)")
+//            } else {
+//                for document in querySnapshot!.documents {
+//                    let realState = ApartmentModel(EstateType: document["EstateType"] as? String, apartment: document["apartment"] as? String, apartmentArea: document["apartmentArea"] as? String, carPark: document["carPark"] as? String, contact: document["contact"] as? String, details: document["details"]as? String, contract: document["contract"] as? String, elevator: document["elevator"]as? String, tank: document["contract"] as? String, toilet: document["toilet"]as? String, title: document["title"] as? String, latitude: document["latitude"] as? Double, longitude: document["longitude"]as? Double, furnished: document["furnished"] as? String, floor: document["floor"] as? String, room: document["room"] as? String, hall: document["hall"]as? String, electricity: document["electricity"]as? String, frontispiece: document["frontispiece"] as? String, streetWeight: document["frontispiece"]as? String, price: document["price"]as? String, image1: document["image1"]as? String, image2: document["image2"] as? String)
+//                    self.realStatesList.append(realState)
+//                    print("\(document.documentID) => \(document.data())")
+//                }
+//                self.showRealStatesPlaces()
+//            }
+//        }
         // Do any additional setup after loading the view.
     }
     func showRealStatesPlaces()   {
@@ -204,5 +207,9 @@ class RealStateMapViewController: UIViewController,FilterBtnTappable, GMSMapView
     }
     
     
+    
+}
+extension RealStateMapViewController:Storyboarded{
+    static var storyboardName: StoryboardName = .main
     
 }

@@ -34,10 +34,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7N7-OQ-ekw">
-                    <rect key="frame" x="128" y="134.5" width="158" height="40"/>
+                    <rect key="frame" x="116" y="134.5" width="182" height="40"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nes-2C-gBv" customClass="OtpTF" customModule="Alsharif" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="32" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="38" height="40"/>
                             <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="0.41775616496598639" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="ezd-oc-JTf"/>
@@ -51,7 +51,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-bE-BCj" customClass="OtpTF" customModule="Alsharif" customModuleProvider="target">
-                            <rect key="frame" x="42" y="0.0" width="32" height="40"/>
+                            <rect key="frame" x="48" y="0.0" width="38" height="40"/>
                             <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="0.41775616496598639" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="pBf-9c-VCY"/>
@@ -65,7 +65,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W5o-W6-Gkf" customClass="OtpTF" customModule="Alsharif" customModuleProvider="target">
-                            <rect key="frame" x="84" y="0.0" width="32" height="40"/>
+                            <rect key="frame" x="96" y="0.0" width="38" height="40"/>
                             <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="0.41775616496598639" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="z1x-Ar-F2w"/>
@@ -79,7 +79,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-i4-AGK" customClass="OtpTF" customModule="Alsharif" customModuleProvider="target">
-                            <rect key="frame" x="126" y="0.0" width="32" height="40"/>
+                            <rect key="frame" x="144" y="0.0" width="38" height="40"/>
                             <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="0.41775616496598639" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="cS5-bC-yiL"/>
@@ -140,16 +140,16 @@
             <size key="intrinsicContentSize" width="52" height="30"/>
         </designable>
         <designable name="E3W-bE-BCj">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="38" height="34"/>
         </designable>
         <designable name="W5o-W6-Gkf">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="38" height="34"/>
         </designable>
         <designable name="nes-2C-gBv">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="38" height="34"/>
         </designable>
         <designable name="t2m-i4-AGK">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="38" height="34"/>
         </designable>
     </designables>
     <resources>

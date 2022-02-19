@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A40FFD27B542EA00DA4402 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A40FFC27B542EA00DA4402 /* CellView.swift */; };
+		04A4100027B5559300DA4402 /* DeatilesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A40FFF27B5558E00DA4402 /* DeatilesVC.swift */; };
 		2D9F06C90045A9A15179FDBB /* Pods_Alsharif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */; };
 		3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */; };
 		3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203349B27A7391D005FF8CD /* FlatesFilterView.xib */; };
@@ -16,7 +18,7 @@
 		326D700427A9DC060091CE64 /* GeneralNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */; };
 		326D700527A9DC060091CE64 /* GeneralTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700327A9DC060091CE64 /* GeneralTarget.swift */; };
 		326D701027A9DF270091CE64 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D700F27A9DF270091CE64 /* Networkable.swift */; };
-		326D701427A9DF980091CE64 /* RealState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D701327A9DF980091CE64 /* RealState.swift */; };
+		326D701427A9DF980091CE64 /* ApartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D701327A9DF980091CE64 /* ApartmentModel.swift */; };
 		326D701827A9E0B40091CE64 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D701727A9E0B40091CE64 /* AppConfig.swift */; };
 		32732883279A18D6005066D8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732882279A18D6005066D8 /* AppData.swift */; };
 		32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32732887279A198F005066D8 /* OnBoardingVC.swift */; };
@@ -55,9 +57,24 @@
 		329E269E27A35AA400D086E9 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329E269D27A35AA400D086E9 /* NibLoadableView.swift */; };
 		32B39F4327AB34490051A684 /* ButtonBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B39F4227AB34490051A684 /* ButtonBorder.swift */; };
 		32E7CE6C27A898B2001F2EAC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E7CE6B27A898B2001F2EAC /* LocationManager.swift */; };
+		41053FE927B4146E00EE90A8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41053FE827B4146E00EE90A8 /* ImagePicker.swift */; };
+		4147996D27B3DC05003901D1 /* LandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147996C27B3DC05003901D1 /* LandModel.swift */; };
+		4147997327B3DF3A003901D1 /* FarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147997227B3DF3A003901D1 /* FarmModel.swift */; };
+		4147997527B3DF44003901D1 /* VillaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4147997427B3DF44003901D1 /* VillaModel.swift */; };
+		4195C0CA27B42A8B0087BE2A /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4195C0C927B42A8B0087BE2A /* TabBarVC.swift */; };
+		41ECE22A27B3EA9E0099FC29 /* PlaceHoderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECE22927B3EA9E0099FC29 /* PlaceHoderTextView.swift */; };
+		41ECE22F27B3F1AD0099FC29 /* AddApartmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECE22E27B3F1AD0099FC29 /* AddApartmentVC.swift */; };
+		41ECE23127B3F1C70099FC29 /* AddFarmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECE23027B3F1C70099FC29 /* AddFarmVC.swift */; };
+		41ECE23327B3F1DD0099FC29 /* AddLandVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECE23227B3F1DD0099FC29 /* AddLandVC.swift */; };
+		41ECE23527B3F1FD0099FC29 /* AddVillaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECE23427B3F1FD0099FC29 /* AddVillaVC.swift */; };
+		7C78303027B82310006336F8 /* SettingTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C78302E27B8230C006336F8 /* SettingTVC.xib */; };
+		7C78303127B82310006336F8 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78302F27B82310006336F8 /* SettingTVC.swift */; };
+		7C78303527B82396006336F8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C78303427B82395006336F8 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04A40FFC27B542EA00DA4402 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		04A40FFF27B5558E00DA4402 /* DeatilesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatilesVC.swift; sourceTree = "<group>"; };
 		2B84CA1EBA71330F9799A1C1 /* Pods-Alsharif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.release.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.release.xcconfig"; sourceTree = "<group>"; };
 		3203349227A72F6F005FF8CD /* RealStateMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStateMapViewController.swift; sourceTree = "<group>"; };
 		3203349B27A7391D005FF8CD /* FlatesFilterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlatesFilterView.xib; sourceTree = "<group>"; };
@@ -67,7 +84,7 @@
 		326D700227A9DC060091CE64 /* GeneralNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralNetworkManager.swift; sourceTree = "<group>"; };
 		326D700327A9DC060091CE64 /* GeneralTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTarget.swift; sourceTree = "<group>"; };
 		326D700F27A9DF270091CE64 /* Networkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
-		326D701327A9DF980091CE64 /* RealState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealState.swift; sourceTree = "<group>"; };
+		326D701327A9DF980091CE64 /* ApartmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentModel.swift; sourceTree = "<group>"; };
 		326D701727A9E0B40091CE64 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		32732882279A18D6005066D8 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		32732887279A198F005066D8 /* OnBoardingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingVC.swift; sourceTree = "<group>"; };
@@ -108,6 +125,19 @@
 		329E269D27A35AA400D086E9 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		32B39F4227AB34490051A684 /* ButtonBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBorder.swift; sourceTree = "<group>"; };
 		32E7CE6B27A898B2001F2EAC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		41053FE827B4146E00EE90A8 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		4147996C27B3DC05003901D1 /* LandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandModel.swift; sourceTree = "<group>"; };
+		4147997227B3DF3A003901D1 /* FarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmModel.swift; sourceTree = "<group>"; };
+		4147997427B3DF44003901D1 /* VillaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillaModel.swift; sourceTree = "<group>"; };
+		4195C0C927B42A8B0087BE2A /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarVC.swift; path = Alsharif/controller/Main/TabBarVC.swift; sourceTree = SOURCE_ROOT; };
+		41ECE22927B3EA9E0099FC29 /* PlaceHoderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceHoderTextView.swift; sourceTree = "<group>"; };
+		41ECE22E27B3F1AD0099FC29 /* AddApartmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddApartmentVC.swift; sourceTree = "<group>"; };
+		41ECE23027B3F1C70099FC29 /* AddFarmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFarmVC.swift; sourceTree = "<group>"; };
+		41ECE23227B3F1DD0099FC29 /* AddLandVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLandVC.swift; sourceTree = "<group>"; };
+		41ECE23427B3F1FD0099FC29 /* AddVillaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVillaVC.swift; sourceTree = "<group>"; };
+		7C78302E27B8230C006336F8 /* SettingTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTVC.xib; sourceTree = "<group>"; };
+		7C78302F27B82310006336F8 /* SettingTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
+		7C78303427B82395006336F8 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		88BF6CBB3E5C70218CCDD3F4 /* Pods_Alsharif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alsharif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCED35B2D1D516D1C0B4FA2C /* Pods-Alsharif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alsharif.debug.xcconfig"; path = "Target Support Files/Pods-Alsharif/Pods-Alsharif.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,7 +191,10 @@
 		326D701227A9DF5C0091CE64 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				326D701327A9DF980091CE64 /* RealState.swift */,
+				326D701327A9DF980091CE64 /* ApartmentModel.swift */,
+				4147996C27B3DC05003901D1 /* LandModel.swift */,
+				4147997227B3DF3A003901D1 /* FarmModel.swift */,
+				4147997427B3DF44003901D1 /* VillaModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -179,6 +212,8 @@
 		3273288A279A19A4005066D8 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7C78302F27B82310006336F8 /* SettingTVC.swift */,
+				7C78302E27B8230C006336F8 /* SettingTVC.xib */,
 				329E26A927A3670D00D086E9 /* Main */,
 				32991385279B57AF0000635D /* Auth */,
 				3273288B279A19A4005066D8 /* OnBoardingVC.xib */,
@@ -190,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				326D701727A9E0B40091CE64 /* AppConfig.swift */,
+				41053FE827B4146E00EE90A8 /* ImagePicker.swift */,
 				32E7CE6B27A898B2001F2EAC /* LocationManager.swift */,
 				329E269727A359A400D086E9 /* TableViewHelper.swift */,
 				3299139B279B5A4F0000635D /* Validator.swift */,
@@ -248,8 +284,12 @@
 		328CFB9927A2E5230072FC5D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7C78303427B82395006336F8 /* SettingsVC.swift */,
+				41ECE22D27B3F1720099FC29 /* AddEstate */,
 				329E26A227A35CA500D086E9 /* MapScene */,
 				328CFB9A27A2E52A0072FC5D /* ListOfRealStateScene */,
+				4195C0CB27B42A900087BE2A /* TabBar */,
+				04A40FFF27B5558E00DA4402 /* DeatilesVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -316,6 +356,7 @@
 		32991392279B590C0000635D /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				41ECE22927B3EA9E0099FC29 /* PlaceHoderTextView.swift */,
 				32991393279B593A0000635D /* MainTF.swift */,
 				32991394279B593A0000635D /* UIViewDesignable.swift */,
 				3275C2FA279C187B008A4EB0 /* OtpTF.swift */,
@@ -336,6 +377,7 @@
 			children = (
 				3203349527A732F0005FF8CD /* Filters */,
 				329E26AA27A3672000D086E9 /* HeaderHorizentalMenu */,
+				04A40FFC27B542EA00DA4402 /* CellView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -347,6 +389,25 @@
 				3282D49227A0A22800986CE6 /* HeaderMenuViewController.swift */,
 			);
 			path = HeaderHorizentalMenu;
+			sourceTree = "<group>";
+		};
+		4195C0CB27B42A900087BE2A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4195C0C927B42A8B0087BE2A /* TabBarVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		41ECE22D27B3F1720099FC29 /* AddEstate */ = {
+			isa = PBXGroup;
+			children = (
+				41ECE22E27B3F1AD0099FC29 /* AddApartmentVC.swift */,
+				41ECE23027B3F1C70099FC29 /* AddFarmVC.swift */,
+				41ECE23227B3F1DD0099FC29 /* AddLandVC.swift */,
+				41ECE23427B3F1FD0099FC29 /* AddVillaVC.swift */,
+			);
+			path = AddEstate;
 			sourceTree = "<group>";
 		};
 		6C4081F0D566A5EE1A049AC9 /* Pods */ = {
@@ -436,6 +497,7 @@
 				32991389279B583B0000635D /* LoginCard.xib in Resources */,
 				3203349C27A7391D005FF8CD /* FlatesFilterView.xib in Resources */,
 				32808BF4278F6D96001D95A6 /* Main.storyboard in Resources */,
+				7C78303027B82310006336F8 /* SettingTVC.xib in Resources */,
 				32423B112791EFDF001CB8FD /* swissra-font-normal.otf in Resources */,
 				32991373279B54F10000635D /* Auth.storyboard in Resources */,
 			);
@@ -510,13 +572,19 @@
 				3282D49427A0A22800986CE6 /* HeaderMenuViewController.swift in Sources */,
 				32991399279B59DA0000635D /* ColorSystem.swift in Sources */,
 				327FA54E2792263D0083C456 /* RoundButton.swift in Sources */,
+				41ECE23127B3F1C70099FC29 /* AddFarmVC.swift in Sources */,
 				3203349327A72F6F005FF8CD /* RealStateMapViewController.swift in Sources */,
 				32991388279B583B0000635D /* LoginCard.swift in Sources */,
+				7C78303527B82396006336F8 /* SettingsVC.swift in Sources */,
+				7C78303127B82310006336F8 /* SettingTVC.swift in Sources */,
+				41ECE22F27B3F1AD0099FC29 /* AddApartmentVC.swift in Sources */,
 				326D700427A9DC060091CE64 /* GeneralNetworkManager.swift in Sources */,
 				3203349F27A73932005FF8CD /* FlatesFilterView.swift in Sources */,
 				326D700527A9DC060091CE64 /* GeneralTarget.swift in Sources */,
 				32E7CE6C27A898B2001F2EAC /* LocationManager.swift in Sources */,
 				3299137F279B57350000635D /* AlertsPresenting.swift in Sources */,
+				04A4100027B5559300DA4402 /* DeatilesVC.swift in Sources */,
+				4147996D27B3DC05003901D1 /* LandModel.swift in Sources */,
 				326D701027A9DF270091CE64 /* Networkable.swift in Sources */,
 				3299137A279B55A30000635D /* SignUPVC.swift in Sources */,
 				32808BF1278F6D96001D95A6 /* ViewController.swift in Sources */,
@@ -526,14 +594,21 @@
 				32808BED278F6D96001D95A6 /* AppDelegate.swift in Sources */,
 				329E269B27A35A7E00D086E9 /* ReusableView.swift in Sources */,
 				32991395279B593A0000635D /* MainTF.swift in Sources */,
+				4195C0CA27B42A8B0087BE2A /* TabBarVC.swift in Sources */,
 				3299137B279B55A30000635D /* SignInVC.swift in Sources */,
+				4147997327B3DF3A003901D1 /* FarmModel.swift in Sources */,
+				4147997527B3DF44003901D1 /* VillaModel.swift in Sources */,
+				04A40FFD27B542EA00DA4402 /* CellView.swift in Sources */,
 				32732888279A198F005066D8 /* OnBoardingVC.swift in Sources */,
 				3299138C279B58A70000635D /* UIViewFromNib.swift in Sources */,
 				3299139C279B5A4F0000635D /* Validator.swift in Sources */,
 				3275C2FE279C4334008A4EB0 /* UserNameViewController.swift in Sources */,
-				326D701427A9DF980091CE64 /* RealState.swift in Sources */,
+				41053FE927B4146E00EE90A8 /* ImagePicker.swift in Sources */,
+				326D701427A9DF980091CE64 /* ApartmentModel.swift in Sources */,
 				3275C2F7279C149B008A4EB0 /* OTPCard.swift in Sources */,
+				41ECE23327B3F1DD0099FC29 /* AddLandVC.swift in Sources */,
 				329E269027A341D500D086E9 /* ListOfRealStatesViewController.swift in Sources */,
+				41ECE23527B3F1FD0099FC29 /* AddVillaVC.swift in Sources */,
 				326D701827A9E0B40091CE64 /* AppConfig.swift in Sources */,
 				329E269827A359A400D086E9 /* TableViewHelper.swift in Sources */,
 				32808BEF278F6D96001D95A6 /* SceneDelegate.swift in Sources */,
@@ -542,6 +617,7 @@
 				32732891279A1D35005066D8 /* Extensions.swift in Sources */,
 				32B39F4327AB34490051A684 /* ButtonBorder.swift in Sources */,
 				32732897279A200E005066D8 /* Storyboarded.swift in Sources */,
+				41ECE22A27B3EA9E0099FC29 /* PlaceHoderTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,12 +766,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 5FKXSYS4DR;
 				INFOPLIST_FILE = "$(SRCROOT)/Alsharif/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherifApp.sherif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -710,12 +789,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL6L6BVPSN;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = 5FKXSYS4DR;
 				INFOPLIST_FILE = "$(SRCROOT)/Alsharif/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sherifApp.sherif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
